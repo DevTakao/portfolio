@@ -1,7 +1,7 @@
 import { IoPersonOutline } from "react-icons/io5";
 import { GiCrossedSwords, GiSpellBook } from "react-icons/gi";
 
-const Navigation = () => {
+const MainNav = () => {
   return (
     <div className="z-50 inline-block text-left">
       <ul className="flex flex-col">
@@ -40,4 +40,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default MainNav;

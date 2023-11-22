@@ -1,7 +1,7 @@
 import { create } from "zustand";
 
 const defaultState = {
-  isStartClicked: true,
+  isStartClicked: false,
 };
 
 const appStore = (set, get) => ({
