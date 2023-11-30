@@ -7,6 +7,10 @@ html {
   color: "#fafafa";
 }
 
+* {
+  /* outline: 1px solid red; */
+}
+
 .theme-scroll {
   scrollbar-width: thin;
   scrollbar-color: var(--scroll-bar-color) #bebebe;
