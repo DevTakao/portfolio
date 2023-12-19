@@ -1,6 +1,6 @@
 import StartButton from "../components/HomePage/StartButton";
 import { useAppStore } from "../store/appStore";
-import Step1 from "./Step1";
+import PortfolioPage from "./PortfolioPage";
 
 const HomePage = () => {
   const { isStartClicked } = useAppStore((state) => ({
@@ -12,7 +12,7 @@ const HomePage = () => {
       <StartButton />
     </div>
   ) : (
-    <Step1></Step1>
+    <PortfolioPage></PortfolioPage>
   );
 };
 
