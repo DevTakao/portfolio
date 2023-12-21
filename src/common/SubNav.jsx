@@ -3,13 +3,19 @@ import { useAppStore } from "../store/appStore";
 import { camelCaseToNormal } from "../utilities/text";
 
 const SubNav = () => {
-  const { currentMain, currentDisplay, updateDisplay } = useAppStore((state) => ({
+  const { currentMain, currentDisplay, updateDisplay, toggleisMobileNavOpen } = useAppStore((state) => ({
     currentMain: state.currentMain,
     currentDisplay: state.currentDisplay,
     updateDisplay: state.updateDisplay,
+    toggleisMobileNavOpen: state.toggleisMobileNavOpen,
   }));
 
   const subList = NAV[currentMain];
+
+  const handleClick = (key) => {
+    updateDisplay(key);
+    toggleisMobileNavOpen();
+  };
 
   return (
     <div className="w-full h-full">
@@ -20,7 +26,7 @@ const SubNav = () => {
           Object.keys(subList).map((key) => (
             <li
               key={key}
-              onClick={() => updateDisplay(key)}
+              onClick={() => handleClick(key)}
               className={`block px-10 py-3 shadow-2xl cursor-pointer ${
                 currentDisplay === key ? "bg-yellow" : "bg-lightsoft"
               } hover:bg-yellow`}
