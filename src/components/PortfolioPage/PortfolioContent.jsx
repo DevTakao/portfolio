@@ -26,7 +26,7 @@ const PortfolioContent = () => {
       </motion.button>
       {isMobileNavOpen && <MobileNav open={isMobileNavOpen} />}
       <div className="grid grid-cols-12 gap-3 lg:gap-0 lg:px-0">
-        <div className={`hidden sm:block order-2 sm:order-2 col-span-6 lg:col-span-4 lg:col-start-2 z-10`}>
+        <div className={`hidden sm:block h-[25vh] order-2 sm:order-2 col-span-6 lg:col-span-4 lg:col-start-2 z-10`}>
           <SubNav />
         </div>
         <div
@@ -34,7 +34,7 @@ const PortfolioContent = () => {
         >
           <MainNav />
         </div>
-        <div className="order-3 col-span-12 col-start-1 sm:col-span-6 sm:col-start-7 lg:order-3 lg:col-span-4 lg:col-start-8">
+        <div className="w-full h-[50vh] order-3 col-span-12 col-start-1 sm:col-span-6 sm:col-start-7 lg:order-3 lg:col-span-4 lg:col-start-8">
           <DisplayCard />
         </div>
       </div>

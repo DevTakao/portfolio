@@ -1,14 +1,21 @@
+import { NAV } from "../data/nav";
+import { useAppStore } from "../store/appStore";
+
 const DisplayCard = () => {
+  const { currentMain, currentDisplay } = useAppStore((state) => ({
+    currentMain: state.currentMain,
+
+    currentDisplay: state.currentDisplay,
+  }));
+
   return (
-    <div className="relative inline-block">
-      <div className="w-full min-h-[75px] shadow-2xl bg-light"></div>
-      <div className="p-8 my-2 text-2xl shadow-2xl bg-light">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem sint adipisci ullam, aliquid eveniet
-        accusantium, iste reiciendis voluptate tempora autem natus asperiores ipsum distinctio suscipit recusandae
-        molestiae quod error nihil.
+    NAV[currentMain][currentDisplay] && (
+      <div className="relative w-full h-full inline-block">
+        <div className="w-full min-h-[75px] shadow-2xl bg-light"></div>
+        <div className="p-8 my-2 text-2xl shadow-2xl bg-light">{NAV[currentMain][currentDisplay]()}</div>
+        <div className="w-full min-h-[75px] shadow-2xl bg-light"></div>
       </div>
-      <div className="w-full min-h-[75px] shadow-2xl bg-light"></div>
-    </div>
+    )
   );
 };
 
