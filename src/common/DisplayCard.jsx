@@ -13,19 +13,19 @@ const DisplayCard = () => {
     <AnimatePresence mode="wait">
       {NAV[currentMain][currentDisplay] && (
         <motion.div {...ContainerAnimation} className="relative w-full h-full inline-block origin-center">
-          <div className="w-full min-h-[75px] shadow-2xl bg-light"></div>
+          <div className="w-full min-h-[75px] shadow-2xl bg-light relative z-10"></div>
           <AnimatePresence mode="wait">
             <motion.div
               {...CardAnimation}
               key={NAV[currentMain][currentDisplay]}
               className="my-2 text-xl shadow-2xl bg-light origin-top overflow-y-auto theme-scroll"
             >
-              <motion.div {...CardContentAnimation} className="p-8 max-h-[50vh]">
+              <motion.div {...CardContentAnimation} className="p-8 max-h-[50vh] relative z-0">
                 {NAV[currentMain][currentDisplay]()}
               </motion.div>
             </motion.div>
           </AnimatePresence>
-          <div className="w-full min-h-[75px] shadow-2xl bg-light"></div>
+          <div className="w-full min-h-[75px] shadow-2xl bg-light relative z-10"></div>
         </motion.div>
       )}
     </AnimatePresence>

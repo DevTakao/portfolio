@@ -18,7 +18,7 @@ const HomePage = () => {
         style={{
           backgroundImage: `url(${BG})`,
         }}
-        className="w-full h-full absolute top-0 left-0 bg-fixed bg-cover bg-center z-0 backdrop-grayscale"
+        className="w-full h-full absolute top-0 left-0 bg-fixed bg-auto bg-center z-0 backdrop-grayscale"
       />
       <PortfolioPage />
     </div>
