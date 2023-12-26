@@ -18,6 +18,7 @@ const MainNav = () => {
             className={`inline-block p-1 sm:p-2 mx-1 sm:mx-3 sm:my-2 transition duration-500 w-[60px] h-[60px] md:w-[10vw] md:h-[10vw] border rounded-full lg:mx-0 ${
               currentMain === "profile" ? "bg-yellow" : "bg-light"
             } border-dark hover:bg-yellow`}
+            title="Occupation and background"
           >
             <span className="inline-flex items-center justify-center w-full h-full p-2 border-8 rounded-full border-dark">
               <IoPersonOutline size={48} />
@@ -31,6 +32,7 @@ const MainNav = () => {
             className={`inline-block p-1 sm:p-2 mx-1 sm:mx-3 sm:my-2 transition duration-500 w-[60px] h-[60px] md:w-[10vw] md:h-[10vw] border rounded-full lg:mx-0 ${
               currentMain === "experience" ? "bg-yellow" : "bg-light"
             } border-dark hover:bg-yellow`}
+            title="Career and experience"
           >
             <span className="inline-flex items-center justify-center w-full h-full p-2 border-8 rounded-full border-dark">
               <GiCrossedSwords size={48} />
@@ -44,6 +46,7 @@ const MainNav = () => {
             className={`inline-block p-1 sm:p-2 mx-1 sm:mx-3 sm:my-2 transition duration-500 w-[60px] h-[60px] md:w-[10vw] md:h-[10vw] border rounded-full lg:mx-0 ${
               currentMain === "skills" ? "bg-yellow" : "bg-light"
             } border-dark hover:bg-yellow`}
+            title="Skills And knowledge"
           >
             <span className="inline-flex items-center justify-center w-full h-full p-2 border-8 rounded-full border-dark">
               <GiSpellBook size={48} />

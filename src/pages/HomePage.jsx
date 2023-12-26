@@ -12,7 +12,7 @@ const HomePage = () => {
       <StartButton />
     </div>
   ) : (
-    <PortfolioPage></PortfolioPage>
+    <PortfolioPage />
   );
 };
 

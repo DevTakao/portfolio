@@ -14,7 +14,7 @@ const StartButton = () => {
   const handleStart = () => {
     setIsDisabled(true);
     buttonControls.start(growOutAnimation.animate);
-    setTimeout(() => toggleStart(), 5000);
+    setTimeout(() => toggleStart(), 2500);
   };
 
   return (
