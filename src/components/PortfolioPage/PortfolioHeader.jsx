@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 const PortfolioHeader = () => {
   return (
-    <motion.div {...fadeInAnimation} className="container mx-auto mb-10">
-      <div className="grid max-w-screen-lg grid-cols-12 p-3 mx-auto text-center bg-light rounded-xl shadow-2xl">
+    <motion.div {...fadeInAnimation} className="w-full grid grid-cols-12 mb-10 relative z-10">
+      <div className="col-start-2 col-span-10 w-full grid grid-cols-12 py-3 px-6 mx-auto text-center bg-light rounded-xl shadow-2xl">
         <h1 className="col-span-12 mb-3 font-serif text-lg font-bold md:text-2xl lg:text-3xl">Taka&apos; Profile</h1>
         <div className="grid grid-cols-2 col-span-12 md:col-span-5">
           <h2 className="font-semibold text-left uppercase">Class:</h2>

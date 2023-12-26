@@ -18,16 +18,18 @@ const StartButton = () => {
   };
 
   return (
-    <motion.button
-      disabled={isDisabled}
-      animate={buttonControls}
-      onClick={handleStart}
-      className={`py-6 font-medium tracking-widest rounded-full px-14 bg-light ${
-        isDisabled ? "text-light" : "text-dark"
-      }`}
-    >
-      Start
-    </motion.button>
+    <div className="w-full h-full flex items-center justify-center bg-dark">
+      <motion.button
+        disabled={isDisabled}
+        animate={buttonControls}
+        onClick={handleStart}
+        className={`py-6 font-medium tracking-widest rounded-full px-14 bg-light ${
+          isDisabled ? "text-light" : "text-dark"
+        }`}
+      >
+        Start
+      </motion.button>
+    </div>
   );
 };
 

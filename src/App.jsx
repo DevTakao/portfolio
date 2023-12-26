@@ -7,14 +7,23 @@ function App() {
   const { isMobileNavOpen } = useAppStore();
 
   useEffect(() => {
-    if (isMobileNavOpen) {
-      document.body.style.overflowY = "hidden";
-    } else {
-      document.body.style.overflowY = "auto";
-    }
+    const mediaQuery = window.matchMedia("(max-width: 639px)");
+
+    const handleScreenSizeChange = () => {
+      if (mediaQuery.matches && isMobileNavOpen) {
+        document.body.style.overflowY = "hidden";
+      } else {
+        document.body.style.overflowY = "auto";
+      }
+    };
+
+    handleScreenSizeChange();
+
+    mediaQuery.addEventListener("change", handleScreenSizeChange);
 
     return () => {
       document.body.style.overflowY = "auto";
+      mediaQuery.removeEventListener("change", handleScreenSizeChange);
     };
   }, [isMobileNavOpen]);
 
