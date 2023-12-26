@@ -6,11 +6,9 @@ import { AnimatePresence, motion } from "framer-motion";
 const DisplayCard = () => {
   const { currentMain, currentDisplay } = useAppStore((state) => ({
     currentMain: state.currentMain,
-
     currentDisplay: state.currentDisplay,
   }));
 
-  console.log("changed", NAV[currentMain][currentDisplay]);
   return (
     <AnimatePresence mode="wait">
       {NAV[currentMain][currentDisplay] && (
@@ -20,9 +18,9 @@ const DisplayCard = () => {
             <motion.div
               {...CardAnimation}
               key={NAV[currentMain][currentDisplay]}
-              className="my-2 text-2xl shadow-2xl bg-light origin-top"
+              className="my-2 text-xl shadow-2xl bg-light origin-top overflow-y-auto theme-scroll"
             >
-              <motion.div {...CardContentAnimation} className="p-8">
+              <motion.div {...CardContentAnimation} className="p-8 max-h-[50vh]">
                 {NAV[currentMain][currentDisplay]()}
               </motion.div>
             </motion.div>

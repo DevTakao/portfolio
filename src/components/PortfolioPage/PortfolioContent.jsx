@@ -34,7 +34,7 @@ const PortfolioContent = () => {
         >
           <MainNav />
         </div>
-        <div className="w-full h-[50vh] order-3 col-span-12 col-start-1 sm:col-span-6 sm:col-start-7 lg:order-3 lg:col-span-4 lg:col-start-8">
+        <div className="w-full h-5 order-3 col-span-12 col-start-1 sm:col-span-6 sm:col-start-7 lg:order-3 lg:col-span-4 lg:col-start-8">
           <DisplayCard />
         </div>
       </div>
