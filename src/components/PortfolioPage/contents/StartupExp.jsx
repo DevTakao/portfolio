@@ -2,7 +2,7 @@ const StartupExp = () => {
   return (
     <div>
       <p className="pb-6">
-        In June 2020, together with 3 other teammates, I won a startup challenge by Phandeeyar under the title of
+        In June 2020, together with 3 other teammates, we won a startup challenge by Phandeeyar under the title of
         &ldquo;Back To Business&rdquo;. The mission of this challenge was to innovate a digital solution that would
         revive local SMEs in Myanmar that halted due to the effects of COVID-19 Outbreak.
         <br />
@@ -13,7 +13,7 @@ const StartupExp = () => {
         <br />
         <br />I took the role of executive management and creatives, and accelerated our company to achieve at least 250
         happy clients in the first 4 months. It was a good team! Unfortunately, the coup in Myanmar that happened soon
-        afterwards shutted our business down.
+        afterwards shut our business down.
       </p>
     </div>
   );
