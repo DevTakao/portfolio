@@ -1,58 +1,7 @@
+import { CardAnimation, CardContentAnimation, ContainerAnimation } from "../animations/animations";
 import { NAV } from "../data/nav";
 import { useAppStore } from "../store/appStore";
 import { AnimatePresence, motion } from "framer-motion";
-
-const ContainerAnimation = {
-  initial: {
-    scaleX: 0,
-  },
-  animate: {
-    scaleX: 1,
-    transition: {
-      duration: 0.2,
-    },
-  },
-  exit: {
-    scaleX: 0,
-    transition: {
-      duration: 0.2,
-    },
-  },
-};
-
-const CardAnimation = {
-  initial: {
-    height: 0,
-  },
-  animate: {
-    height: "auto",
-    transition: {
-      delay: 0.2,
-      duration: 0.5,
-    },
-  },
-  exit: {
-    height: 0,
-    transition: {
-      duration: 0.5,
-    },
-  },
-};
-
-const CardContentAnimation = {
-  initial: {
-    opacity: 0,
-  },
-  animate: {
-    opacity: 1,
-    transition: {
-      delay: 0.7,
-    },
-  },
-  exit: {
-    opacity: 0,
-  },
-};
 
 const DisplayCard = () => {
   const { currentMain, currentDisplay } = useAppStore((state) => ({
