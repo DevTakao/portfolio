@@ -20,7 +20,7 @@ const PortfolioPage = () => {
       <PortfolioHeader />
       <PortfolioContent />
       <Footer />
-      <ReactAudioPlayer src={Music} autoPlay={true} volume={isAudioOn ? 1 : 0} loop />
+      <ReactAudioPlayer src={Music} autoPlay={true} volume={0.75} muted={!isAudioOn} loop />
     </div>
   );
 };
