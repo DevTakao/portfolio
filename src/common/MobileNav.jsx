@@ -33,7 +33,7 @@ const MobileNav = () => {
 
           <motion.div className="grid grid-cols-12 gap-3">
             <div
-              className={`fixed sm:hidden top-6 left-auto right-auto order-2 w-[90%] h-[50vh] lg:order-1 lg:col-span-4 lg:col-start-2 z-50`}
+              className={`fixed sm:hidden top-6 left-[50%] -translate-x-[50%] order-2 w-[90%] h-[50vh] lg:order-1 lg:col-span-4 lg:col-start-2 z-50`}
             >
               <SubNav />
             </div>

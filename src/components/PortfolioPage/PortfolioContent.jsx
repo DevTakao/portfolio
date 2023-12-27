@@ -13,7 +13,7 @@ const PortfolioContent = () => {
   }));
 
   return (
-    <div className="px-7 sm:px-12 md:px-20 lg:px-0">
+    <div className="px-7 sm:px-12 md:px-20 lg:px-0 min-h-[100vh]">
       <motion.button
         animate={{ rotate: isMobileNavOpen ? 45 : 0 }}
         onClick={() => toggleisMobileNavOpen()}
