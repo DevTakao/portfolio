@@ -2,6 +2,7 @@ import { create } from "zustand";
 
 const defaultState = {
   isStartClicked: false,
+  isAudioOn: false,
   isMobileNavOpen: false,
   currentMain: "profile",
   currentDisplay: "basicInfo",
@@ -10,6 +11,7 @@ const defaultState = {
 const appStore = (set) => ({
   ...defaultState,
   toggleStart: () => set((prev) => ({ isStartClicked: !prev.isStartClicked })),
+  setAudio: (bool) => set({ isAudioOn: bool }),
   toggleisMobileNavOpen: () => set((prev) => ({ isMobileNavOpen: !prev.isMobileNavOpen })),
   updateMain: (mainName) => {
     if (!mainName) {
