@@ -20,7 +20,7 @@ const DisplayCard = () => {
               key={NAV[currentMain][currentDisplay]}
               className="my-2 text-xl shadow-2xl bg-light origin-top overflow-y-auto theme-scroll"
             >
-              <motion.div {...CardContentAnimation} className="p-8 max-h-[50vh] relative z-0">
+              <motion.div {...CardContentAnimation} className="p-8 max-h-[30vh] relative z-0">
                 {NAV[currentMain][currentDisplay]()}
               </motion.div>
             </motion.div>
