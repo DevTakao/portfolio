@@ -6,6 +6,7 @@ import OtherSkills from "../components/PortfolioPage/contents/OtherSkills";
 import WebExp from "../components/PortfolioPage/contents/WebExp";
 import Books from "../components/PortfolioPage/contents/Books";
 import StartupExp from "../components/PortfolioPage/contents/StartupExp";
+import Projects from "../components/PortfolioPage/contents/Projects";
 
 export const NAV = {
   profile: {
@@ -19,6 +20,7 @@ export const NAV = {
     bookRecommendations: Books,
   },
   experience: {
+    projectsDone: Projects,
     webDevelopmentExperience: WebExp,
     startupExperience: StartupExp,
   },
