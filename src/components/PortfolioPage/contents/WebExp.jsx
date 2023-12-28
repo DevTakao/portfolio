@@ -10,7 +10,7 @@ const WebExpItem = ({ role, company, years }) => {
 
 const WebExp = () => {
   return (
-    <div className="text-left divide-y-2 divide-lightsoft">
+    <div className="text-left divide-y-2 divide-lightsoft p-8">
       <WebExpItem
         {...{
           role: "Web Developer & Technical Research Analyst",

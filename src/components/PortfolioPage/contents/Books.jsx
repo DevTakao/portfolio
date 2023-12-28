@@ -40,7 +40,7 @@ const Books = () => {
   ];
 
   return (
-    <div className="relative text-left divide-y-2 divide-y-reverse divide-lightsoft">
+    <div className="relative text-left divide-y-2 divide-y-reverse divide-lightsoft p-8">
       <h2 className="text-lg mb-6 sticky top-0 bg-light py-2">
         Here are some books that I have read and would recommend to my friends.
       </h2>

@@ -1,7 +1,7 @@
 import { create } from "zustand";
 
 const defaultState = {
-  isStartClicked: false,
+  isStartClicked: true,
   isAudioOn: false,
   isMobileNavOpen: false,
   currentMain: "profile",

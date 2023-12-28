@@ -11,7 +11,7 @@ const OtherSkills = () => {
   ];
 
   return (
-    <div>
+    <div className="p-8">
       <ul className="divide-y-2 divide-lightsoft">
         {skills.map((skill, i) => (
           <li key={i} className="py-4">

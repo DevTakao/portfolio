@@ -1,7 +1,7 @@
 const Hobbies = () => {
   return (
-    <div className="text-left">
-      <ul className="list-disc px-4">
+    <div className="text-left p-8">
+      <ul className="list-disc mx-6">
         <li>Drinking tea</li>
         <li>Visiting cafes and trying out sweets</li>
         <li>Patting animals, especially cats</li>

@@ -1,7 +1,7 @@
 const StartupExp = () => {
   return (
-    <div>
-      <p className="pb-6">
+    <div className="p-8">
+      <p>
         In June 2020, together with 3 other teammates, we won a startup challenge by Phandeeyar under the title of
         &ldquo;Back To Business&rdquo;. The mission of this challenge was to innovate a digital solution that would
         revive local SMEs in Myanmar that halted due to the effects of COVID-19 Outbreak.

@@ -13,7 +13,7 @@ const PortfolioPage = () => {
     <div className="w-full py-8 bg-[#f1f1f1] text-dark text-center">
       <button
         onClick={toggleAudio}
-        className="absolute top-0 right-5 p-3 inline-flex items-center justify-center bg-light shadow-xl z-50 rounded-b-xl"
+        className="fixed top-0 right-5 p-3 inline-flex items-center justify-center bg-light shadow-xl z-50 rounded-b-xl"
       >
         {isAudioOn ? <FaVolumeUp className="animate-pulse" /> : <FaVolumeMute />}
       </button>
