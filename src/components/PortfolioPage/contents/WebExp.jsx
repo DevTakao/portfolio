@@ -1,8 +1,15 @@
-const WebExpItem = ({ role, company, years }) => {
+const WebExpItem = ({ role, company, url, years }) => {
   return (
-    <div className="px-6 py-3">
+    <div className="px-6 py-3 flex flex-col items-start">
       <h3 className="text-xl font-bold">{role}</h3>
-      <h4 className="text-lg font-semibold before:content-['@'] before:mr-1">{company}</h4>
+      <a
+        href={url}
+        target="_blank"
+        rel="noreferrer"
+        className="inline-block text-lg font-semibold before:content-['@'] before:mr-1 hover:text-yellow transition duration-500 mb-2"
+      >
+        {company}
+      </a>
       <span className="text-sm font-normal">{years}</span>
     </div>
   );
@@ -15,6 +22,7 @@ const WebExp = () => {
         {...{
           role: "Web Developer & Technical Research Analyst",
           company: "Visible One, Singapore",
+          url: "https://visibleone.com/",
           years: "Jun 2023 - Present",
         }}
       />
@@ -22,6 +30,7 @@ const WebExp = () => {
         {...{
           role: "Front-end Development Team Leader",
           company: "Nexstack, Singapore",
+          url: "https://nexstack.sg/",
           years: "Aug 2022 - Jun 2023",
         }}
       />
@@ -29,6 +38,7 @@ const WebExp = () => {
         {...{
           role: "Front-end Developer (React.js, Next.js)",
           company: "Nexstack, Singapore",
+          url: "https://nexstack.sg/",
           years: "Mar 2022 - Aug 2022",
         }}
       />

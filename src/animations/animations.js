@@ -49,3 +49,57 @@ export const CardContentAnimation = {
     opacity: 0,
   },
 };
+
+export const SlideDownAnimation = {
+  initial: {
+    x: "-50%",
+    y: "-101%",
+    opacity: 0,
+  },
+  animate: {
+    x: "-50%",
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.7,
+    },
+  },
+  exit: {
+    y: "-101%",
+    transition: {
+      duration: 0.7,
+    },
+  },
+};
+
+export const SlideUpAnimation = {
+  initial: {
+    y: "151%",
+  },
+  animate: {
+    y: 0,
+    transition: {
+      duration: 0.7,
+    },
+  },
+  exit: {
+    y: "151%",
+    transition: {
+      duration: 0.7,
+    },
+  },
+};
+
+export const fadeInAnim = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 0.8,
+    transition: { duration: 0.7 },
+  },
+  exit: {
+    opacity: 0,
+    transition: { duration: 0.7 },
+  },
+};

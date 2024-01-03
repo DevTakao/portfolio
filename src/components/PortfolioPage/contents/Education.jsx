@@ -3,8 +3,9 @@ const Education = () => {
     <div className="text-left p-8">
       <p className="pb-6">
         I passed the Matriculation Examination in Myanmar with 5 Distinctions across 6 Subjects in 2016 with great
-        scores in <b className="font-semibold">Maths</b>(98/100) and <b className="font-semibold">Physics</b>(92/100).
-        Those marks probably mean nothing by now, I just wanted to show my foundations of critical thinking and Maths.
+        scores in <b className="font-semibold">Maths</b> and <b className="font-semibold">Physics</b>. Those marks
+        probably mean nothing by now, I just wanted to show the foundations of my critical thinking and problem-solving
+        skills.
         <br />
         <br /> This allowed me to enroll <b className="font-semibold">Yangon Technological University</b>, one of the
         best engineering universities in Myanmar. I applied for the Computer Engineering & Information Technology Major
