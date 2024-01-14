@@ -1,6 +1,5 @@
 import StartButton from "../components/Home/StartButton";
 import { useAppStore } from "../store/appStore";
-import BG from "../assets/images/bg.avif";
 import PortfolioSection from "../components/Portfolio/PortfolioSection";
 
 const HomePage = () => {
@@ -14,12 +13,6 @@ const HomePage = () => {
     </div>
   ) : (
     <div className="w-full min-h-[100vh] h-full overflow-auto relative">
-      <div
-        style={{
-          backgroundImage: `url(${BG})`,
-        }}
-        className="w-full h-full absolute top-0 left-0 bg-fixed bg-auto bg-center z-0 backdrop-grayscale"
-      />
       <PortfolioSection />
     </div>
   );
