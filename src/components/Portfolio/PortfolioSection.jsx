@@ -1,12 +1,13 @@
-import PortfolioHeader from "../components/PortfolioPage/PortfolioHeader";
-import PortfolioContent from "../components/PortfolioPage/PortfolioContent";
-import Footer from "../common/Footer";
-import Music from "../assets/sounds/down_by_the_river_nerissa.mp3";
-import ReactAudioPlayer from "react-audio-player";
-import { useAppStore } from "../store/appStore";
 import { FaVolumeUp, FaVolumeMute } from "react-icons/fa";
+import ReactAudioPlayer from "react-audio-player";
 
-const PortfolioPage = () => {
+import { useAppStore } from "@store/appStore";
+import Footer from "@common/Footer";
+import Music from "@assets/sounds/down_by_the_river_nerissa.mp3";
+import PortfolioHeader from "./PortfolioHeader";
+import PortfolioContent from "./PortfolioContent";
+
+const PortfolioSection = () => {
   const { isAudioOn, setAudio } = useAppStore();
   const toggleAudio = () => setAudio(!isAudioOn);
   return (
@@ -25,4 +26,4 @@ const PortfolioPage = () => {
   );
 };
 
-export default PortfolioPage;
+export default PortfolioSection;

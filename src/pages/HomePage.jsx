@@ -1,7 +1,7 @@
-import StartButton from "../components/HomePage/StartButton";
+import StartButton from "../components/Home/StartButton";
 import { useAppStore } from "../store/appStore";
-import PortfolioPage from "./PortfolioPage";
 import BG from "../assets/images/bg.avif";
+import PortfolioSection from "../components/Portfolio/PortfolioSection";
 
 const HomePage = () => {
   const { isStartClicked } = useAppStore((state) => ({
@@ -20,7 +20,7 @@ const HomePage = () => {
         }}
         className="w-full h-full absolute top-0 left-0 bg-fixed bg-auto bg-center z-0 backdrop-grayscale"
       />
-      <PortfolioPage />
+      <PortfolioSection />
     </div>
   );
 };
