@@ -21,19 +21,19 @@ const SubNav = () => {
 
   return (
     <div className="w-full h-full">
-      <div className="w-full min-h-[64px] shadow-2xl bg-light relative z-10"></div>
+      <div className="w-full h-[35px] sm:h-[64px] bg-light relative z-10 shadow-md"></div>
       <AnimatePresence mode="wait">
         <motion.ul
           {...CardAnimation}
           key={currentMain}
-          className="relative theme-scroll h-full z-0 my-2 overflow-y-auto text-base md:text-lg lg:text-2xl flex flex-col gap-y-2 overscroll-contain bg-transparent"
+          className="relative theme-scroll h-full z-0 my-2 overflow-y-auto text-sm md:text-base lg:text-xl flex flex-col divide-y-2 overscroll-contain bg-transparent"
         >
           {subList &&
             Object.keys(subList).map((key) => (
               <li
                 key={key}
                 onClick={() => handleClick(key)}
-                className={`block px-10 py-3 shadow-2xl cursor-pointer ${
+                className={`block px-1 md:px-10 py-2 sm:py-3 shadow-md cursor-pointer ${
                   currentDisplay === key ? "bg-yellow" : "bg-lightsoft"
                 } hover:bg-yellow`}
               >
@@ -42,7 +42,7 @@ const SubNav = () => {
             ))}
         </motion.ul>
       </AnimatePresence>
-      <div className="w-full min-h-[64px] shadow-2xl bg-light relative z-10"></div>
+      <div className="w-full h-[35px] sm:h-[64px] bg-light relative z-10 shadow-md"></div>
     </div>
   );
 };

@@ -15,13 +15,13 @@ export const NAV = {
     hobbies: Hobbies,
   },
   skills: {
-    webSkills: ProgrammingSkills,
-    otherSkills: OtherSkills,
-    bookRecommendations: Books,
+    programming: ProgrammingSkills,
+    other: OtherSkills,
+    books: Books,
   },
   experience: {
-    projectsDone: Projects,
-    webDevelopmentExperience: WebExp,
-    startupExperience: StartupExp,
+    projects: Projects,
+    career: WebExp,
+    startup: StartupExp,
   },
 };
