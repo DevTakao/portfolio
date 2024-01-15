@@ -8,6 +8,7 @@ export default {
         lightsoft: "#efefef",
         light: "#fafafa",
         yellow: "#4dc1ff",
+        darkaccent: "#051832",
       },
     },
     fontFamily: {
