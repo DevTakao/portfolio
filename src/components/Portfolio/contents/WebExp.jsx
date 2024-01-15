@@ -1,12 +1,12 @@
 const WebExpItem = ({ role, company, url, years }) => {
   return (
     <div className="px-6 py-3 flex flex-col items-start">
-      <h3 className="text-xl font-bold">{role}</h3>
+      <h3 className="text-base md:text-xl font-bold">{role}</h3>
       <a
         href={url}
         target="_blank"
         rel="noreferrer"
-        className="inline-block text-lg font-semibold before:content-['@'] before:mr-1 hover:text-yellow transition duration-500 mb-2"
+        className="inline-block text-base md:text-lg font-medium md:font-semibold before:content-['@'] before:mr-1 hover:text-yellow transition duration-500 mb-2"
       >
         {company}
       </a>

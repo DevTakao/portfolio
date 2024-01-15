@@ -3,6 +3,7 @@ import { useAppStore } from "../store/appStore";
 import PortfolioSection from "../components/Portfolio/PortfolioSection";
 import Footer from "@common/Footer";
 import AudioToggle from "@common/AudioToggle";
+import HeroSection from "@components/Hero/HeroSection";
 
 const HomePage = () => {
   const { isStartClicked } = useAppStore((state) => ({
@@ -14,7 +15,8 @@ const HomePage = () => {
       <StartButton />
     </div>
   ) : (
-    <div className="w-full min-h-[100vh] h-full relative">
+    <div className="w-full h-screen relative overflow-auto snap-y snap-proximity">
+      <HeroSection />
       <PortfolioSection />
       <Footer />
       <AudioToggle />

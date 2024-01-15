@@ -1,10 +1,10 @@
 import PortfolioContent from "./PortfolioContent";
 
-import BG from "@assets/images/bg.avif";
+import BG from "@assets/images/aincrad.jpg";
 
 const PortfolioSection = () => {
   return (
-    <section id="portfolio" className="h-[90vh] sm:h-[80vh] md:h-[90vh] lg:h-[75vh] border-2 border-red-400">
+    <section id="portfolio" className="h-screen relative snap-start">
       <div
         style={{
           backgroundImage: `url(${BG})`,
