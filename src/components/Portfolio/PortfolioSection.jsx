@@ -1,6 +1,6 @@
 import PortfolioContent from "./PortfolioContent";
 
-import BG from "@assets/images/aincrad.avif";
+import BG from "@assets/images/aincrad.jpg";
 
 const PortfolioSection = () => {
   return (
