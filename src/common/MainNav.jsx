@@ -9,7 +9,7 @@ const MainNav = () => {
   }));
 
   return (
-    <div className="z-50 inline-block mt-5 mb-10 text-left lg:mb-0">
+    <div className="z-50 inline-block mt-5 mb-7 text-left lg:mb-0">
       <ul className="flex flex-row lg:flex-col">
         <li>
           <button
