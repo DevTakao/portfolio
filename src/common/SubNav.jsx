@@ -21,7 +21,7 @@ const SubNav = () => {
 
   return (
     <div className="w-full h-full">
-      <div className="w-full h-[35px] sm:h-[64px] bg-light relative z-10 shadow-md"></div>
+      <div className="w-full h-[45px] sm:h-[64px] bg-light relative z-10 shadow-md"></div>
       <AnimatePresence mode="wait">
         <motion.ul
           {...CardAnimation}
@@ -42,7 +42,7 @@ const SubNav = () => {
             ))}
         </motion.ul>
       </AnimatePresence>
-      <div className="w-full h-[35px] sm:h-[64px] bg-light relative z-10 shadow-md"></div>
+      <div className="w-full h-[45px] sm:h-[64px] bg-light relative z-10 shadow-md"></div>
     </div>
   );
 };

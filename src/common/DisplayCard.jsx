@@ -13,7 +13,7 @@ const DisplayCard = () => {
     <AnimatePresence mode="wait">
       {NAV[currentMain][currentDisplay] && (
         <motion.div {...ContainerAnimation} className="relative w-full h-full block origin-center">
-          <div className="w-full h-[35px] sm:h-[75px] shadow-md bg-light relative z-10"></div>
+          <div className="w-full h-[45px] sm:h-[75px] shadow-md bg-light relative z-10"></div>
           <AnimatePresence mode="wait">
             <motion.div
               {...CardAnimation}
@@ -25,7 +25,7 @@ const DisplayCard = () => {
               </motion.div>
             </motion.div>
           </AnimatePresence>
-          <div className="w-full h-[35px] sm:h-[75px] shadow-md bg-light relative z-10"></div>
+          <div className="w-full h-[45px] sm:h-[75px] shadow-md bg-light relative z-10"></div>
         </motion.div>
       )}
     </AnimatePresence>
