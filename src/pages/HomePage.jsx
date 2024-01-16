@@ -1,9 +1,11 @@
+import { Suspense, lazy } from "react";
 import StartButton from "../components/Home/StartButton";
 import { useAppStore } from "../store/appStore";
-import PortfolioSection from "../components/Portfolio/PortfolioSection";
 import Footer from "@common/Footer";
 import AudioToggle from "@common/AudioToggle";
-import HeroSection from "@components/Hero/HeroSection";
+import PageLoader from "@common/PageLoader";
+const HeroSection = lazy(() => import("@components/Hero/HeroSection"));
+const PortfolioSection = lazy(() => import("@components/Portfolio/PortfolioSection"));
 
 const HomePage = () => {
   const { isStartClicked } = useAppStore((state) => ({
@@ -15,12 +17,14 @@ const HomePage = () => {
       <StartButton />
     </div>
   ) : (
-    <div className="w-full h-screen relative overflow-auto snap-y snap-proximity">
-      <HeroSection />
-      <PortfolioSection />
-      <Footer />
-      <AudioToggle />
-    </div>
+    <Suspense fallback={<PageLoader />}>
+      <div className="w-full h-screen relative overflow-auto snap-y snap-proximity">
+        <HeroSection />
+        <PortfolioSection />
+        <Footer />
+        <AudioToggle />
+      </div>
+    </Suspense>
   );
 };
 

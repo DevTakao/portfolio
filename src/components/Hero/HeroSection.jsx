@@ -1,22 +1,28 @@
 import WallpaperVideo from "@assets/videos/wallpaper.mp4";
-import { useLayoutEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { useAppStore } from "@store/appStore";
 
 const HeroSection = () => {
-  const [loaded, setLoaded] = useState(false);
+  const { isHomePageLoading: loading, setHomePageLoading: setLoading } = useAppStore();
 
-  useLayoutEffect(() => {
-    setLoaded(true);
-  }, []);
+  const handleVideoLoadStart = () => {
+    setLoading(true);
+  };
+
+  const handleVideoLoadedData = () => {
+    setLoading(false);
+  };
 
   return (
     <div>
       <div className="h-screen bg-light relative">
         <div
-          data-loaded={loaded}
+          data-loaded={!loading}
           className="absolute z-0 w-full h-full bg-left data-[loaded=false]:[clipPath:circle(0%_at_0%_0%)] data-[loaded=true]:[clipPath:circle(69.7%_at_24%_36%)] transition-all duration-[2000ms] ease-in"
         >
           <video
+            onLoadStart={handleVideoLoadStart}
+            onLoadedData={handleVideoLoadedData}
             src={WallpaperVideo}
             autoPlay
             muted
@@ -29,7 +35,7 @@ const HeroSection = () => {
 
         <div className="absolute z-[1] right-0 flex items-center h-full px-3 md:pr-12 max-w-sm text-right">
           <h1
-            data-loaded={loaded}
+            data-loaded={!loading}
             className="text-dark text-6xl uppercase data-[loaded=false]:opacity-0 data-[loaded=true]:opacity-100 delay-[1500ms] transition-opacity duration-700"
             style={{ textShadow: "0 2px 6px white, 2px 0 6px white, 0 -2px 6px white, -2px 0 6px white" }}
           >

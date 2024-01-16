@@ -1,13 +1,22 @@
 import { FaVolumeUp, FaVolumeMute } from "react-icons/fa";
-
+import { useEffect, useState } from "react";
 import { useAppStore } from "@store/appStore";
-
-import Music from "@assets/sounds/down_by_the_river_nerissa.mp3";
 import ReactAudioPlayer from "react-audio-player";
+import Music from "@assets/sounds/down_by_the_river_nerissa.mp3";
 
 const AudioToggle = () => {
   const { isAudioOn, setAudio } = useAppStore();
+  const [musicSrc, setMusicSrc] = useState(null);
   const toggleAudio = () => setAudio(!isAudioOn);
+
+  useEffect(() => {
+    setMusicSrc(Music);
+
+    return () => {
+      setMusicSrc(null);
+    };
+  }, []);
+
   return (
     <>
       <button
@@ -16,7 +25,7 @@ const AudioToggle = () => {
       >
         {isAudioOn ? <FaVolumeUp className="animate-pulse" /> : <FaVolumeMute />}
       </button>
-      <ReactAudioPlayer src={Music} autoPlay={true} volume={0.75} muted={!isAudioOn} loop />
+      <ReactAudioPlayer src={musicSrc} autoPlay={true} volume={0.75} muted={!isAudioOn} loop />
     </>
   );
 };

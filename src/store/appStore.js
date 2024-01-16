@@ -6,6 +6,7 @@ const defaultState = {
   isMobileNavOpen: false,
   currentMain: "profile",
   currentDisplay: "basicInfo",
+  isHomePageLoading: true,
 };
 
 const appStore = (set) => ({
@@ -13,6 +14,7 @@ const appStore = (set) => ({
   toggleStart: () => set((prev) => ({ isStartClicked: !prev.isStartClicked })),
   setAudio: (bool) => set({ isAudioOn: bool }),
   toggleisMobileNavOpen: () => set((prev) => ({ isMobileNavOpen: !prev.isMobileNavOpen })),
+  setHomePageLoading: (bool) => set({ isHomePageLoading: bool }),
   updateMain: (mainName) => {
     if (!mainName) {
       throw new Error("No data with for the mainName:", mainName);
