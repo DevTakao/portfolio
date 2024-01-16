@@ -17,8 +17,8 @@ const HeroSection = () => {
     <div>
       <div className="h-screen bg-light relative">
         <div
-          data-loaded={!loading}
-          className="absolute z-0 w-full h-full bg-left data-[loaded=false]:[clipPath:circle(0%_at_0%_0%)] data-[loaded=true]:[clipPath:circle(69.7%_at_24%_36%)] transition-all duration-[2000ms] ease-in"
+          data-loading={loading}
+          className="absolute z-0 w-full h-full bg-left data-[loading=true]:[clipPath:circle(0%_at_0%_0%)] data-[loading=false]:[clipPath:circle(69.7%_at_24%_36%)] transition-all duration-[2000ms] ease-in"
         >
           <video
             onLoadStart={handleVideoLoadStart}
@@ -35,8 +35,8 @@ const HeroSection = () => {
 
         <div className="absolute z-[1] right-0 flex items-center h-full px-3 md:pr-12 max-w-sm text-right">
           <h1
-            data-loaded={!loading}
-            className="text-dark text-6xl uppercase data-[loaded=false]:opacity-0 data-[loaded=true]:opacity-100 delay-[1500ms] transition-opacity duration-700"
+            data-loading={loading}
+            className="text-dark text-6xl uppercase data-[loading=true]:opacity-0 data-[loading=false]:opacity-100 delay-[1500ms] transition-opacity duration-700"
             style={{ textShadow: "0 2px 6px white, 2px 0 6px white, 0 -2px 6px white, -2px 0 6px white" }}
           >
             Welcome to my World

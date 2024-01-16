@@ -8,8 +8,9 @@ const HeroSection = lazy(() => import("@components/Hero/HeroSection"));
 const PortfolioSection = lazy(() => import("@components/Portfolio/PortfolioSection"));
 
 const HomePage = () => {
-  const { isStartClicked } = useAppStore((state) => ({
+  const { isStartClicked, isHomePageLoading: loading } = useAppStore((state) => ({
     isStartClicked: state.isStartClicked,
+    isHomePageLoading: state.isHomePageLoading,
   }));
 
   return !isStartClicked ? (
@@ -18,7 +19,8 @@ const HomePage = () => {
     </div>
   ) : (
     <Suspense fallback={<PageLoader />}>
-      <div className="w-full h-screen relative overflow-auto snap-y snap-proximity">
+      {loading && <PageLoader />}
+      <div className="w-full relative overflow-auto">
         <HeroSection />
         <PortfolioSection />
         <Footer />
