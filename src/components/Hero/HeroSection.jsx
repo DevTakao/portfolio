@@ -16,7 +16,15 @@ const HeroSection = () => {
           data-loaded={loaded}
           className="absolute z-0 w-full h-full bg-left data-[loaded=false]:[clipPath:circle(0%_at_0%_0%)] data-[loaded=true]:[clipPath:circle(69.7%_at_24%_36%)] transition-all duration-[2000ms] ease-in"
         >
-          <video src={WallpaperVideo} autoPlay muted loop className="w-full h-full object-cover" />
+          <video
+            src={WallpaperVideo}
+            autoPlay
+            muted
+            loop
+            playsInline
+            controls={false}
+            className="w-full h-full object-cover"
+          />
         </div>
 
         <div className="absolute z-[1] right-0 flex items-center h-full px-3 md:pr-12 max-w-sm text-right">
