@@ -1,6 +1,7 @@
 import WallpaperVideo from "@assets/videos/wallpaper.mp4";
 import { motion } from "framer-motion";
 import { useAppStore } from "@store/appStore";
+import ScrollGuide from "./ScrollGuide";
 
 const HeroSection = () => {
   const { isHomePageLoading: loading, setHomePageLoading: setLoading } = useAppStore();
@@ -33,18 +34,27 @@ const HeroSection = () => {
           />
         </div>
 
-        <div className="absolute z-[1] right-0 flex items-center h-full px-3 md:pr-12 max-w-sm text-right">
-          <h1
-            data-loading={loading}
-            className="text-dark text-6xl uppercase data-[loading=true]:opacity-0 data-[loading=false]:opacity-100 delay-[1500ms] transition-opacity duration-700"
-            style={{ textShadow: "0 2px 6px white, 2px 0 6px white, 0 -2px 6px white, -2px 0 6px white" }}
-          >
-            Welcome to my World
-          </h1>
+        <div className="absolute z-[1] right-0 px-3 md:pr-12 max-w-sm text-right">
+          <div className="relative flex items-center h-screen">
+            <div className="inline-block relative">
+              <h1
+                data-loading={loading}
+                className="relative z-[1] text-dark text-6xl uppercase data-[loading=true]:opacity-0 data-[loading=false]:opacity-100 delay-[1500ms] transition-opacity duration-700"
+                style={{ textShadow: "0 2px 6px white, 2px 0 6px white, 0 -2px 6px white, -2px 0 6px white" }}
+              >
+                Welcome to my World
+              </h1>
+              {!loading && (
+                <div className="absolute z-0 top-[50%] left-[50%]">
+                  <ScrollGuide />
+                </div>
+              )}
+            </div>
+          </div>
         </div>
       </div>
-      <div className="h-[50vh] text-center">
-        <div className="h-full max-w-screen-md mx-auto flex flex-col items-center justify-center px-3">
+      <div className="Introduction h-[50vh] text-center">
+        <div className="h-full max-w-screen-md mx-auto flex flex-col items-center justify-center px-6">
           <motion.h2
             initial={{ opacity: 0, y: 50 }}
             whileInView={{
@@ -66,9 +76,10 @@ const HeroSection = () => {
             }}
             viewport={{ once: true }}
           >
-            I&apos;m a daydreaming Technical Research Analyst & Web Developer. I love cats and drinking tea. <br />
+            I&apos;m a daydreaming Technical Research Analyst & Web Developer. I love cats 🐱 and drinking tea 🍵. As
+            you may have already guessed, I love animes and video games. This whole website has been inspired by them.
+            Hope you enjoy your visit!
             <br />
-            Enjoy your visit!
           </motion.p>
         </div>
       </div>
