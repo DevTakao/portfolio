@@ -4,7 +4,7 @@ import { useAppStore } from "../store/appStore";
 import Footer from "@common/Footer";
 import AudioToggle from "@common/AudioToggle";
 import PageLoader from "@common/PageLoader";
-import ProjectsSection from "@components/Projects/ProjectsSection";
+const ProjectsSection = lazy(() => import("@components/Projects/ProjectsSection"));
 const HeroSection = lazy(() => import("@components/Hero/HeroSection"));
 const PortfolioSection = lazy(() => import("@components/Portfolio/PortfolioSection"));
 
