@@ -10,12 +10,21 @@ const AudioToggle = () => {
   const toggleAudio = () => setAudio(!isAudioOn);
 
   useEffect(() => {
+    const ref = audioRef.current;
     setMusicSrc(Music);
+    if (ref) {
+      if (isAudioOn) {
+        ref.muted = false;
+      } else {
+        ref.muted = false;
+      }
+    }
 
     return () => {
       setMusicSrc(null);
+      ref.muted = true;
     };
-  }, []);
+  }, [isAudioOn]);
 
   return (
     <>
@@ -28,7 +37,7 @@ const AudioToggle = () => {
           <AudioVisual audio={audioRef} />
         </div>
       </button>
-      <audio ref={audioRef} src={musicSrc} autoPlay={true} muted={!isAudioOn} loop />
+      <audio ref={audioRef} src={musicSrc} autoPlay={false} loop />
     </>
   );
 };
