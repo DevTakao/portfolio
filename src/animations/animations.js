@@ -22,9 +22,15 @@ export const CardAnimation = {
   },
   animate: {
     height: "auto",
+    opacity: [0, 0, 0.8, 0, 0.4, 1],
     transition: {
       delay: 0.2,
       duration: 0.5,
+      opacity: {
+        delay: 0.25,
+        duration: 1,
+        times: [0, 0.2, 0.3, 0.4, 0.6, 1],
+      },
     },
   },
   exit: {
