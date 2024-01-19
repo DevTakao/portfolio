@@ -29,7 +29,7 @@ const ProjectsSection = () => {
       image: Animations,
       title: "Animations",
       description:
-        "Breathing life into digital content, making them feel more immersive and fun. It's not just a website anymore. It's an alternative world!",
+        "Breathing life into digital content, making them feel more immersive and fun. It's not just a website anymore. It's an alternate world!",
     },
     {
       image: Database,
