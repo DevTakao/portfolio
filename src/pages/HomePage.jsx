@@ -20,7 +20,7 @@ const HomePage = () => {
   ) : (
     <Suspense fallback={<PageLoader />}>
       {loading && <PageLoader />}
-      <div className="w-full relative overflow-auto">
+      <div className="w-full overflow-hidden">
         <HeroSection />
         <PortfolioSection />
         <Footer />
