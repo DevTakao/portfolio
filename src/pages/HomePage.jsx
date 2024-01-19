@@ -4,6 +4,7 @@ import { useAppStore } from "../store/appStore";
 import Footer from "@common/Footer";
 import AudioToggle from "@common/AudioToggle";
 import PageLoader from "@common/PageLoader";
+import ProjectsSection from "@components/Projects/ProjectsSection";
 const HeroSection = lazy(() => import("@components/Hero/HeroSection"));
 const PortfolioSection = lazy(() => import("@components/Portfolio/PortfolioSection"));
 
@@ -22,6 +23,7 @@ const HomePage = () => {
       {loading && <PageLoader />}
       <div className="w-full overflow-hidden">
         <HeroSection />
+        <ProjectsSection />
         <PortfolioSection />
         <Footer />
         <AudioToggle />
