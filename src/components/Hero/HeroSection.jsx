@@ -1,4 +1,5 @@
 import WallpaperVideo from "@assets/videos/wallpaper.mp4";
+import WallpaperImage from "@assets/images/bg.jpg";
 import { motion } from "framer-motion";
 import { useAppStore } from "@store/appStore";
 import ScrollGuide from "./ScrollGuide";
@@ -21,6 +22,7 @@ const HeroSection = () => {
           data-loading={loading}
           className="absolute z-0 w-full h-full bg-left data-[loading=true]:[clipPath:circle(0%_at_0%_0%)] data-[loading=false]:[clipPath:circle(69.7%_at_24%_36%)] transition-all duration-[2000ms] ease-in"
         >
+          <img src={WallpaperImage} className="block lg:hidden w-full h-full object-cover" />
           <video
             onLoadStart={handleVideoLoadStart}
             onLoadedData={handleVideoLoadedData}
@@ -30,7 +32,7 @@ const HeroSection = () => {
             loop
             playsInline
             controls={false}
-            className="w-full h-full object-cover"
+            className="hidden lg:block w-full h-full object-cover"
           />
         </div>
 
