@@ -11,10 +11,10 @@ const Footer = () => {
       <br />
       <span className="text-[0.75rem]">
         &copy; Media Assets & Inspiration: Sword Art Online | Music:{" "}
-        <a href="https://www.youtube.com/watch?v=8j3wK1DXhrs" target="_blank" rel="noreferrer" className="underline">
-          Down By The River
+        <a href="https://www.youtube.com/watch?v=_Ci0Kgdpgsw" target="_blank" rel="noreferrer" className="underline">
+          On The Run
         </a>
-        , cover by Nerissa Ravencroft (Fair-use)
+        , by Timecop1983 (Fair-use)
       </span>
     </motion.div>
   );

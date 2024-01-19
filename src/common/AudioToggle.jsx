@@ -1,12 +1,12 @@
-import { FaVolumeUp, FaVolumeMute } from "react-icons/fa";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useAppStore } from "@store/appStore";
-import ReactAudioPlayer from "react-audio-player";
-import Music from "@assets/sounds/down_by_the_river_nerissa.mp3";
+import AudioVisual from "react-audio-visual";
+import Music from "@assets/sounds/Timecop1983_On_the_Run.mp3";
 
 const AudioToggle = () => {
   const { isAudioOn, setAudio } = useAppStore();
   const [musicSrc, setMusicSrc] = useState(null);
+  const audioRef = useRef();
   const toggleAudio = () => setAudio(!isAudioOn);
 
   useEffect(() => {
@@ -21,11 +21,14 @@ const AudioToggle = () => {
     <>
       <button
         onClick={toggleAudio}
-        className="fixed top-0 right-5 p-3 inline-flex items-center justify-center bg-light shadow-xl z-[999] rounded-b-xl"
+        className="fixed top-0 right-5 p-3 inline-flex items-center justify-center bg-yellow border-b border-x border-white z-[999] rounded-b-xl"
+        style={{ boxShadow: "0px 0px 10px 3px #a4fff6" }}
       >
-        {isAudioOn ? <FaVolumeUp className="animate-pulse" /> : <FaVolumeMute />}
+        <div className="w-6 h-6">
+          <AudioVisual audio={audioRef} />
+        </div>
       </button>
-      <ReactAudioPlayer src={musicSrc} autoPlay={true} volume={0.75} muted={!isAudioOn} loop />
+      <audio ref={audioRef} src={musicSrc} autoPlay={true} muted={!isAudioOn} loop />
     </>
   );
 };
