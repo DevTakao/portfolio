@@ -1,8 +1,9 @@
+import { useRef } from "react";
+import { motion } from "framer-motion";
 import { MouseParallax } from "react-just-parallax";
 import PortfolioContent from "./PortfolioContent";
 
-import BG from "@assets/images/aincrad.jpg";
-import { useRef } from "react";
+import BG from "@assets/images/cyber_world_2.jpg";
 
 const PortfolioSection = () => {
   const parallaxContainerRef = useRef(null);
@@ -17,13 +18,17 @@ const PortfolioSection = () => {
           style={{
             backgroundImage: `url(${BG})`,
           }}
-          className="Background scale-110 w-full h-full bg-fixed bg-cover bg-no-repeat bg-center z-0 backdrop-grayscale"
+          className="Background scale-110 w-full h-full bg-fixed bg-cover bg-no-repeat bg-bottom-center z-0"
         />
       </MouseParallax>
 
-      <div className="Content w-full py-8 bg-[#f1f1f1] text-dark text-center">
+      <motion.div
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+        className="Content w-full py-8 bg-transparent text-dark text-center"
+      >
         <PortfolioContent />
-      </div>
+      </motion.div>
     </section>
   );
 };

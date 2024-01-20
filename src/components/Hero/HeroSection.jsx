@@ -1,5 +1,4 @@
-import WallpaperVideo from "@assets/videos/wallpaper.mp4";
-import WallpaperImage from "@assets/images/bg.jpg";
+import WallpaperImage from "@assets/images/cyber_world.jpg";
 import { motion } from "framer-motion";
 import { useAppStore } from "@store/appStore";
 import ScrollGuide from "./ScrollGuide";
@@ -7,11 +6,7 @@ import ScrollGuide from "./ScrollGuide";
 const HeroSection = () => {
   const { isHomePageLoading: loading, setHomePageLoading: setLoading } = useAppStore();
 
-  const handleVideoLoadStart = () => {
-    setLoading(true);
-  };
-
-  const handleVideoLoadedData = () => {
+  const handleImageLoaded = () => {
     setLoading(false);
   };
 
@@ -22,18 +17,7 @@ const HeroSection = () => {
           data-loading={loading}
           className="absolute z-0 w-full h-full bg-left data-[loading=true]:[clipPath:circle(0%_at_0%_0%)] data-[loading=false]:[clipPath:circle(69.7%_at_24%_36%)] transition-all duration-[2000ms] ease-in"
         >
-          <img src={WallpaperImage} className="block lg:hidden w-full h-full object-cover" />
-          <video
-            onLoadStart={handleVideoLoadStart}
-            onLoadedData={handleVideoLoadedData}
-            src={WallpaperVideo}
-            autoPlay
-            muted
-            loop
-            playsInline
-            controls={false}
-            className="hidden lg:block w-full h-full object-cover"
-          />
+          <img onLoad={handleImageLoaded} src={WallpaperImage} className="block w-full h-full object-cover bg-top" />
         </div>
 
         <div className="absolute z-[1] right-0 px-3 md:pr-12 max-w-sm text-right">
@@ -41,17 +25,13 @@ const HeroSection = () => {
             <div className="inline-block relative">
               <h1
                 data-loading={loading}
-                className="relative z-[1] text-dark text-6xl uppercase data-[loading=true]:opacity-0 data-[loading=false]:opacity-100 delay-[1500ms] transition-opacity duration-700"
-                style={{ textShadow: "0 2px 6px white, 2px 0 6px white, 0 -2px 6px white, -2px 0 6px white" }}
+                className="relative z-[1] text-light text-6xl uppercase data-[loading=true]:opacity-0 data-[loading=false]:opacity-100 delay-[1500ms] transition-opacity duration-700"
+                style={{ textShadow: "0 2px 6px #4dc1ff, 2px 0 6px #4dc1ff, 0 -2px 6px #4dc1ff, -2px 0 6px #4dc1ff" }}
               >
                 Welcome to my World
               </h1>
-              {!loading && (
-                <div className="absolute z-0 top-[50%] left-[50%]">
-                  <ScrollGuide />
-                </div>
-              )}
             </div>
+            {!loading && <ScrollGuide />}
           </div>
         </div>
       </div>

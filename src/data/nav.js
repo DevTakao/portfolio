@@ -15,8 +15,8 @@ export const NAV = {
     hobbies: Hobbies,
   },
   skills: {
-    programming: ProgrammingSkills,
-    other: OtherSkills,
+    webDev: ProgrammingSkills,
+    others: OtherSkills,
     books: Books,
   },
   experience: {

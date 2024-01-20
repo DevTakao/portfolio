@@ -10,7 +10,7 @@ const Footer = () => {
       Portfolio Website, Aung Kaung Khant, 2024
       <br />
       <span className="text-[0.75rem]">
-        &copy; Media Assets & Inspiration: Sword Art Online | Music:{" "}
+        &copy; Music:{" "}
         <a href="https://www.youtube.com/watch?v=_Ci0Kgdpgsw" target="_blank" rel="noreferrer" className="underline">
           On The Run
         </a>

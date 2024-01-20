@@ -23,7 +23,7 @@ const animation = {
 
 const ProjectCard = ({ image, title, description, imageFirst = true }) => {
   const containerRef = useRef(null);
-  const inView = useInView(containerRef, { once: true });
+  const inView = useInView(containerRef);
 
   return (
     <div ref={containerRef} className="Project_Container grid grid-cols-1 md:grid-cols-2 mb-24">
