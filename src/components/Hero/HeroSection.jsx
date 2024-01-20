@@ -17,7 +17,12 @@ const HeroSection = () => {
           data-loading={loading}
           className="absolute z-0 w-full h-full bg-left data-[loading=true]:[clipPath:circle(0%_at_0%_0%)] data-[loading=false]:[clipPath:circle(69.7%_at_24%_36%)] transition-all duration-[2000ms] ease-in"
         >
-          <img onLoad={handleImageLoaded} src={WallpaperImage} className="block w-full h-full object-cover bg-top" />
+          <img
+            onLoad={handleImageLoaded}
+            data-loading={loading}
+            src={WallpaperImage}
+            className="block w-full h-full object-cover bg-top data-[loading=true]:scale-150 data-[loading=false]:scale-100 transition-all duration-[2000ms] ease-in"
+          />
         </div>
 
         <div className="absolute z-[1] right-0 px-3 md:pr-12 max-w-sm text-right">
