@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import WallpaperImage from "@assets/images/cyber_world.jpg";
 import { motion } from "framer-motion";
 import { useAppStore } from "@store/appStore";
@@ -6,9 +7,18 @@ import ScrollGuide from "./ScrollGuide";
 const HeroSection = () => {
   const { isHomePageLoading: loading, setHomePageLoading: setLoading } = useAppStore();
 
+  const [secretClickCounter, setSecretClickCounter] = useState(0);
+
   const handleImageLoaded = () => {
     setLoading(false);
   };
+
+  useEffect(() => {
+    if (secretClickCounter >= 5) {
+      alert(`Hey, you found a secret note: I have a girlfriend whom I call "Ma".`);
+      setSecretClickCounter(0);
+    }
+  }, [secretClickCounter]);
 
   return (
     <div>
@@ -63,9 +73,12 @@ const HeroSection = () => {
             }}
             viewport={{ once: true }}
           >
-            I&apos;m a daydreaming Technical Research Analyst & Web Developer. I love cats 🐱 and drinking tea 🍵. As
-            you may have already guessed, I love animes and video games. This whole website has been inspired by them.
-            Hope you enjoy your visit!
+            I&apos;m a daydreaming Technical Research Analyst & Web Developer. I love cats{" "}
+            <span className="select-none" onClick={() => setSecretClickCounter((prev) => prev + 1)}>
+              🐱
+            </span>{" "}
+            and drinking tea 🍵. As you may have already guessed, I love animes and video games. This whole website has
+            been inspired by them. Hope you enjoy your visit!
             <br />
           </motion.p>
         </div>
