@@ -6,6 +6,7 @@ import AudioToggle from "@common/AudioToggle";
 import PageLoader from "@common/PageLoader";
 const ProjectsSection = lazy(() => import("@components/Projects/ProjectsSection"));
 const HeroSection = lazy(() => import("@components/Hero/HeroSection"));
+const SkillsSection = lazy(() => import("@components/SKills/SkillsSection"));
 const PortfolioSection = lazy(() => import("@components/Portfolio/PortfolioSection"));
 
 const HomePage = () => {
@@ -23,6 +24,7 @@ const HomePage = () => {
       {loading && <PageLoader />}
       <div className="w-full overflow-hidden">
         <HeroSection />
+        <SkillsSection />
         <ProjectsSection />
         <PortfolioSection />
         <Footer />

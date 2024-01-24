@@ -4,6 +4,7 @@ import Geolocation from "@assets/images/projects/geolocation.svg";
 import Animations from "@assets/images/projects/animations.svg";
 import Supermarket from "@assets/images/projects/supermarket.svg";
 import ProjectCard from "./ProjectCard"; // Import the new component
+import SectionHeader from "@common/SectionHeader";
 
 const ProjectsSection = () => {
   const projectsData = [
@@ -41,7 +42,7 @@ const ProjectsSection = () => {
 
   return (
     <section className="Projects_Section py-24 px-10 bg-lightsoft">
-      <h2 className="text-center text-4xl font-medium mb-24">Projects I Have Done</h2>
+      <SectionHeader>Projects I Have Done</SectionHeader>
       <div className="max-w-screen-lg mx-auto">
         {projectsData.map((project, index) => (
           <ProjectCard key={index} {...project} imageFirst={index % 2 === 0} />
