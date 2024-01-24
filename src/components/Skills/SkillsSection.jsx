@@ -26,8 +26,8 @@ const SkillsSection = () => {
   };
 
   return (
-    <section className="Skills_Section bg-darksoft py-10 px-10">
-      <SectionHeader>Geek Stats</SectionHeader>
+    <section className="Skills_Section bg-darksoft py-24 px-10">
+      <SectionHeader>Character Stats</SectionHeader>
       <div className="Container max-w-screen-lg mx-auto px-5 grid grid-cols-1 md:grid-cols-2">
         <div className="PersonSVGWrapper hidden md:flex items-center justify-center">
           <svg className="w-full h-full" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
