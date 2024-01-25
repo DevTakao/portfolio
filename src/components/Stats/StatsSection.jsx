@@ -4,7 +4,7 @@ import { Radar } from "react-chartjs-2";
 
 ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend);
 
-const SkillsSection = () => {
+const StatsSection = () => {
   const data = {
     labels: ["Learning", "Technical", "Teamwork", "Communication", "Design", "Debugging"],
     datasets: [
@@ -26,7 +26,7 @@ const SkillsSection = () => {
   };
 
   return (
-    <section className="Skills_Section bg-darksoft py-24 px-10">
+    <section className="Skills_Section bg-darksoft section-container">
       <SectionHeader>Character Stats</SectionHeader>
       <div className="Container max-w-screen-lg mx-auto px-5 grid grid-cols-1 md:grid-cols-2">
         <div className="PersonSVGWrapper hidden md:flex items-center justify-center">
@@ -46,4 +46,4 @@ const SkillsSection = () => {
   );
 };
 
-export default SkillsSection;
+export default StatsSection;

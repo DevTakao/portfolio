@@ -41,7 +41,7 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section className="Projects_Section py-24 px-10 bg-lightsoft">
+    <section className="Projects_Section section-container bg-lightsoft">
       <SectionHeader>Projects I Have Done</SectionHeader>
       <div className="max-w-screen-lg mx-auto">
         {projectsData.map((project, index) => (
