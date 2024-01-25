@@ -109,3 +109,19 @@ export const fadeInAnim = {
     transition: { duration: 0.7 },
   },
 };
+
+export const BigGrowthAnimation = {
+  initial: {
+    scale: 1,
+  },
+  animate: {
+    scale: 20,
+    transition: {
+      duration: 1.5,
+      easing: "ease-in-out",
+    },
+  },
+  exit: {
+    scale: 1000,
+  },
+};

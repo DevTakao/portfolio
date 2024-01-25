@@ -1,4 +1,4 @@
-import { SlideDownAnimation, SlideUpAnimation, fadeInAnim } from "../animations/animations";
+import { SlideDownAnimation, SlideUpAnimation, fadeInAnim } from "@animations";
 import { useAppStore } from "../store/appStore";
 import MainNav from "./MainNav";
 import SubNav from "./SubNav";

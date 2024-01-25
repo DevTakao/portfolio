@@ -1,11 +1,11 @@
-import { fadeInAnimation } from "../utilities/animations";
+import { fadeInAnim } from "@animations";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithubSquare, FaFacebookSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <motion.div
-      {...fadeInAnimation}
+      {...fadeInAnim}
       className="relative z-10 my-10 py-5 px-6 text-base font-serif bg-light text-left sm:text-center"
     >
       <div className="Socials max-w-md mx-auto flex items-center justify-start sm:justify-center mb-4 [&>a]:mr-2 [&>a:last]:mr-0">

@@ -1,4 +1,4 @@
-import { CardAnimation, CardContentAnimation, ContainerAnimation } from "@animations/animations";
+import { CardAnimation, CardContentAnimation, ContainerAnimation } from "@animations";
 import { NAV } from "../data/nav";
 import { useAppStore } from "../store/appStore";
 import { AnimatePresence, motion } from "framer-motion";

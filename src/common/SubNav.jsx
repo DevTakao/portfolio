@@ -1,4 +1,4 @@
-import { CardAnimation } from "../animations/animations";
+import { CardAnimation } from "@animations";
 import { NAV } from "../data/nav";
 import { useAppStore } from "../store/appStore";
 import { camelCaseToNormal } from "../utilities/text";

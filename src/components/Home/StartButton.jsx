@@ -1,6 +1,6 @@
 import { motion, useAnimation } from "framer-motion";
 import { useAppStore } from "../../store/appStore";
-import { growOutAnimation } from "../../utilities/animations";
+import { BigGrowthAnimation } from "@animations";
 import { useState } from "react";
 
 const StartButton = () => {
@@ -15,7 +15,7 @@ const StartButton = () => {
   const handleStart = (isAudioOn) => {
     setIsDisabled(true);
     setAudio(isAudioOn);
-    buttonControls.start(growOutAnimation.animate);
+    buttonControls.start(BigGrowthAnimation.animate);
     setTimeout(() => toggleStart(), 2500);
   };
 
