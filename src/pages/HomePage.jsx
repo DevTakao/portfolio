@@ -7,6 +7,7 @@ import PageLoader from "@common/PageLoader";
 const ProjectsSection = lazy(() => import("@components/Projects/ProjectsSection"));
 const HeroSection = lazy(() => import("@components/Hero/HeroSection"));
 const StatsSection = lazy(() => import("@components/Stats/StatsSection"));
+const SkillsSection = lazy(() => import("@components/Skills/SkillsSection"));
 const PortfolioSection = lazy(() => import("@components/Portfolio/PortfolioSection"));
 
 const HomePage = () => {
@@ -25,6 +26,7 @@ const HomePage = () => {
       <div className="w-full overflow-hidden">
         <HeroSection />
         <StatsSection />
+        <SkillsSection />
         <ProjectsSection />
         <PortfolioSection />
         <Footer />

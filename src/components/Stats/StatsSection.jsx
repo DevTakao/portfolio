@@ -26,9 +26,9 @@ const StatsSection = () => {
   };
 
   return (
-    <section className="Skills_Section bg-darksoft section-container">
+    <section className="Stats_Section bg-darksoft section-container">
       <SectionHeader>Character Stats</SectionHeader>
-      <div className="Container max-w-screen-lg mx-auto px-5 grid grid-cols-1 md:grid-cols-2">
+      <div className="Container max-w-screen-lg mx-auto md:px-5 grid grid-cols-1 md:grid-cols-2">
         <div className="PersonSVGWrapper hidden md:flex items-center justify-center">
           <svg className="w-full h-full" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path
