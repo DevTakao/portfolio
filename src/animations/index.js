@@ -101,12 +101,12 @@ export const fadeInAnim = {
     opacity: 0,
   },
   animate: {
-    opacity: 0.8,
-    transition: { duration: 0.7 },
+    opacity: 1,
+    transition: { duration: 0.5 },
   },
   exit: {
     opacity: 0,
-    transition: { duration: 0.7 },
+    transition: { duration: 0.5 },
   },
 };
 
