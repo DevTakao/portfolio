@@ -3,8 +3,18 @@
     "baseUrl": ".",
     "target": "es6",
     "paths": {
-      "@*": ["./src/*"]
+      "@*": ["src/*"],
+      "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
+      "@common/*": ["src/common/*"],
+      "@pages/*": ["src/pages/*"],
+      "@store/*": ["src/store/*"],
+      "@data/*": ["src/data/*"],
+      "@animations/*": ["src/animations/*"],
+      "@utilities/*": ["src/utilities/*"],
+      "@constants/*": ["src/constants/*"]
     }
   },
-  "exclude": ["node_modules"]
+  "include": ["*"],
+  "exclude": ["./node_modules/*", "./dist/*"]
 }
