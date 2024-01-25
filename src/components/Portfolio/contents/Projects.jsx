@@ -46,7 +46,7 @@ const Projects = () => {
         {data.map((d, i) => (
           <li key={i} className="py-7">
             <h3 className="font-medium text-xl">{d.name}</h3>
-            <p className="font-light text-lg text-yellow mb-4">{d.industry}</p>
+            <p className="font-light text-lg text-blue mb-4">{d.industry}</p>
             <p className="font-light text-base flex items-start">
               <span className="font-medium mr-2 inline-flex items-center justify-between">
                 Client

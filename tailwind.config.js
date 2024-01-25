@@ -8,7 +8,7 @@ export default {
         darksoft: "#ddd",
         lightsoft: "#efefef",
         light: "#fafafa",
-        yellow: "#4dc1ff",
+        blue: "#4dc1ff",
         darkaccent: "#051832",
         purple: "#7F5F8E",
         green: "#B0F35F",

@@ -34,8 +34,8 @@ const SubNav = () => {
                 key={key}
                 onClick={() => handleClick(key)}
                 className={`block px-1 md:px-10 py-2 sm:py-3 shadow-md cursor-pointer ${
-                  currentDisplay === key ? "bg-yellow" : "bg-lightsoft"
-                } hover:bg-yellow`}
+                  currentDisplay === key ? "bg-blue" : "bg-lightsoft"
+                } hover:bg-blue`}
               >
                 {camelCaseToNormal(key)}
               </li>

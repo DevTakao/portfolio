@@ -16,8 +16,8 @@ const MainNav = () => {
             onClick={() => updateMain("profile")}
             style={{ boxShadow: "0px 0px 8px #000" }}
             className={`inline-block p-1 sm:p-2 mx-1 sm:mx-3 sm:my-2 transition duration-500 w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] border rounded-full lg:mx-0 ${
-              currentMain === "profile" ? "bg-yellow" : "bg-light"
-            } border-dark hover:bg-yellow`}
+              currentMain === "profile" ? "bg-blue" : "bg-light"
+            } border-dark hover:bg-blue`}
             title="Occupation and background"
           >
             <span className="inline-flex items-center justify-center w-full h-full p-2 border-8 rounded-full border-dark">
@@ -30,8 +30,8 @@ const MainNav = () => {
             onClick={() => updateMain("experience")}
             style={{ boxShadow: "0px 0px 8px #000" }}
             className={`inline-block p-1 sm:p-2 mx-1 sm:mx-3 sm:my-2 transition duration-500 w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] border rounded-full lg:mx-0 ${
-              currentMain === "experience" ? "bg-yellow" : "bg-light"
-            } border-dark hover:bg-yellow`}
+              currentMain === "experience" ? "bg-blue" : "bg-light"
+            } border-dark hover:bg-blue`}
             title="Career and experience"
           >
             <span className="inline-flex items-center justify-center w-full h-full p-2 border-8 rounded-full border-dark">
@@ -44,8 +44,8 @@ const MainNav = () => {
             onClick={() => updateMain("skills")}
             style={{ boxShadow: "0px 0px 8px #000" }}
             className={`inline-block p-1 sm:p-2 mx-1 sm:mx-3 sm:my-2 transition duration-500 w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] border rounded-full lg:mx-0 ${
-              currentMain === "skills" ? "bg-yellow" : "bg-light"
-            } border-dark hover:bg-yellow`}
+              currentMain === "skills" ? "bg-blue" : "bg-light"
+            } border-dark hover:bg-blue`}
             title="Skills And knowledge"
           >
             <span className="inline-flex items-center justify-center w-full h-full p-2 border-8 rounded-full border-dark">

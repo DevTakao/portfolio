@@ -8,11 +8,7 @@ import BG from "@assets/images/cyber_world_2.jpg";
 const PortfolioSection = () => {
   const parallaxContainerRef = useRef(null);
   return (
-    <section
-      ref={parallaxContainerRef}
-      id="portfolio"
-      className="h-screen relative snap-start overflow-hidden bg-yellow"
-    >
+    <section ref={parallaxContainerRef} id="portfolio" className="h-screen relative snap-start overflow-hidden bg-blue">
       <MouseParallax parallaxContainerRef={parallaxContainerRef} strength={0.01} isAbsolutelyPositioned>
         <div
           style={{

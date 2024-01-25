@@ -13,7 +13,7 @@ const Footer = () => {
           href="https://www.linkedin.com/in/takao21/"
           target="_blank"
           rel="noreferrer"
-          className="text-dark hover:text-yellow transition-all duration-300"
+          className="text-dark hover:text-blue transition-all duration-300"
         >
           <FaLinkedin size={25} />
         </a>
@@ -21,7 +21,7 @@ const Footer = () => {
           href="https://github.com/DevTakao/"
           target="_blank"
           rel="noreferrer"
-          className="text-dark hover:text-yellow transition-all duration-300"
+          className="text-dark hover:text-blue transition-all duration-300"
         >
           <FaGithubSquare size={25} />
         </a>
@@ -29,7 +29,7 @@ const Footer = () => {
           href="https://www.facebook.com/joichiro.takao/"
           target="_blank"
           rel="noreferrer"
-          className="text-dark hover:text-yellow transition-all duration-300"
+          className="text-dark hover:text-blue transition-all duration-300"
         >
           <FaFacebookSquare size={25} />
         </a>

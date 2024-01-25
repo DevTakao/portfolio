@@ -62,7 +62,7 @@ const HeroSection = () => {
             viewport={{ once: true }}
             className="text-xl"
           >
-            Hello, my name is <strong className="text-yellow">Takao</strong>.
+            Hello, my name is <strong className="text-blue">Takao</strong>.
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 50 }}
