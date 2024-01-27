@@ -3,6 +3,7 @@ import WallpaperImage from "@assets/images/cyber_world.jpg";
 import { motion } from "framer-motion";
 import { useAppStore } from "@store/appStore";
 import ScrollGuide from "./ScrollGuide";
+import CatSvg from "@common/CatSvg";
 
 const HeroSection = () => {
   const { isHomePageLoading: loading, setHomePageLoading: setLoading } = useAppStore();
@@ -50,8 +51,11 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className="Introduction h-[50vh] text-center">
-        <div className="h-full max-w-screen-md mx-auto flex flex-col items-center justify-center px-6">
+      <div className="Introduction h-[50vh] text-center relative">
+        <div className="SVG_BG w-[clamp(100px,25vw,200px)] absolute z-[0] bottom-0 left-5 opacity-10">
+          <CatSvg />
+        </div>
+        <div className="Main relative z-[1] h-full max-w-screen-md mx-auto flex flex-col items-center justify-center px-6">
           <motion.h2
             initial={{ opacity: 0, y: 50 }}
             whileInView={{
