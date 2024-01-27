@@ -6,11 +6,11 @@ ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, 
 
 const StatsSection = () => {
   const data = {
-    labels: ["Learning", "Technical", "Teamwork", "Communication", "Design", "Debugging"],
+    labels: ["Programming", "Debugging", "DevOps", "Creative", "Management", "Passion"],
     datasets: [
       {
         label: "Strength",
-        data: [9.9, 9.2, 7.7, 8.5, 3, 9],
+        data: [9, 8, 2, 7.7, 7, 10],
         backgroundColor: "rgba(77, 193, 255, 0.2)",
         borderColor: "rgba(77, 193, 255, 1)",
         borderWidth: 1,
