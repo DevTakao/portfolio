@@ -2,8 +2,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "target": "es6",
+    "jsx": "react",
+    "moduleResolution": "node",
     "paths": {
-      "@*": ["src/*"],
       "@assets/*": ["src/assets/*"],
       "@components/*": ["src/components/*"],
       "@common/*": ["src/common/*"],
@@ -12,9 +13,10 @@
       "@data/*": ["src/data/*"],
       "@animations/*": ["src/animations/*"],
       "@utilities/*": ["src/utilities/*"],
-      "@constants/*": ["src/constants/*"]
+      "@constants/*": ["src/constants/*"],
+      "@/*": ["src/*"]
     }
   },
-  "include": ["*"],
+  "include": ["src"],
   "exclude": ["./node_modules/*", "./dist/*"]
 }
