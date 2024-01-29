@@ -25,7 +25,7 @@ const SkillsSection = () => {
           />
         </AnimatePresence>
       </div>
-      <div className="Backdrop absolute z-[1] w-full h-full top-0 left-0 bg-light bg-opacity-60" />
+      <div className="Backdrop absolute z-[1] w-full h-full top-0 left-0 bg-lightsoft bg-opacity-60" />
       <div className="Main relative z-[2]">
         <SectionHeader>My Weapons</SectionHeader>
         <div className="select-none">

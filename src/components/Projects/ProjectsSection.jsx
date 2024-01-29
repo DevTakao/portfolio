@@ -5,6 +5,7 @@ import Animations from "@assets/images/projects/animations.svg";
 import Supermarket from "@assets/images/projects/supermarket.svg";
 import ProjectCard from "./ProjectCard"; // Import the new component
 import SectionHeader from "@common/SectionHeader";
+import ConstellationsSVG from "@assets/images/endless-constellation.svg";
 
 const ProjectsSection = () => {
   const projectsData = [
@@ -41,12 +42,18 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section className="Projects_Section section-container bg-lightsoft">
-      <SectionHeader>Projects I Have Done</SectionHeader>
-      <div className="max-w-screen-lg mx-auto">
-        {projectsData.map((project, index) => (
-          <ProjectCard key={index} {...project} imageFirst={index % 2 === 0} />
-        ))}
+    <section className="Projects_Section section-container relative">
+      <div
+        style={{ backgroundImage: `url(${ConstellationsSVG})` }}
+        className="absolute z-[0] top-0 left-0 w-full h-full opacity-30 bg-fixed bg-repeat"
+      />
+      <div className="relative z-[1]">
+        <SectionHeader>Projects I Have Done</SectionHeader>
+        <div className="max-w-screen-lg mx-auto">
+          {projectsData.map((project, index) => (
+            <ProjectCard key={index} {...project} imageFirst={index % 2 === 0} />
+          ))}
+        </div>
       </div>
     </section>
   );
