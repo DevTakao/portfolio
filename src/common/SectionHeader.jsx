@@ -19,14 +19,14 @@ const SectionHeader = ({ children }) => {
   const containerRef = useRef(null);
   const inView = useInView(containerRef);
   return (
-    <div ref={containerRef} className="overflow-hidden mb-12 md:mb-24 py-1">
+    <div ref={containerRef} className="overflow-hidden h-12 mb-12 md:mb-24 relative">
       <AnimatePresence>
         {inView && (
           <motion.h2
             variants={variants}
             initial="initial"
             animate="animate"
-            className="text-center text-5xl font-medium"
+            className="text-center w-full text-5xl font-medium absolute top-0 left-0"
           >
             {children}
           </motion.h2>
