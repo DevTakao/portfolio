@@ -7,6 +7,7 @@ import PageLoader from "@common/PageLoader";
 const ProjectsSection = lazy(() => import("@components/Projects/ProjectsSection"));
 const HeroSection = lazy(() => import("@components/Hero/HeroSection"));
 const SkillsSection = lazy(() => import("@components/Skills/SkillsSection"));
+const QuotesSection = lazy(() => import("@components/Quotes/QuotesSection"));
 const PortfolioSection = lazy(() => import("@components/Portfolio/PortfolioSection"));
 
 const HomePage = () => {
@@ -26,6 +27,7 @@ const HomePage = () => {
         <HeroSection />
         <SkillsSection />
         <ProjectsSection />
+        <QuotesSection />
         <PortfolioSection />
         <Footer />
         <AudioToggle />
