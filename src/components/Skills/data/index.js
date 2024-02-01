@@ -1,10 +1,10 @@
-import ReactLogo from "@assets/images/react.png";
-import NextLogo from "@assets/images/next.png";
-import HTMLLogo from "@assets/images/html.png";
-import CSSLogo from "@assets/images/css.png";
-import JSLogo from "@assets/images/javascript.png";
-import TailwindLogo from "@assets/images/tailwind.png";
-import ThreeLogo from "@assets/images/three.png";
+import ReactLogo from "@assets/images/skills/react-min.png";
+import NextLogo from "@assets/images/skills/next-min.png";
+import HTMLLogo from "@assets/images/skills/html-min.png";
+import CSSLogo from "@assets/images/skills/css-min.png";
+import JSLogo from "@assets/images/skills/javascript-min.png";
+import TailwindLogo from "@assets/images/skills/tailwind-min.png";
+import ThreeLogo from "@assets/images/skills/three-min.png";
 
 export const skills = [
   {
