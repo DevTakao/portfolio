@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import QuoteIcon from "@assets/images/quote-icon.svg";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import QuoteImage from "./QuoteImage";
 
 const fadeVariants = {
   initial: {
@@ -117,20 +118,7 @@ const QuotesSection = () => {
               </AnimatePresence>
             </div>
           </div>
-          <div className="ImageWrapper w-full h-[200px] sm:h-full sm:min-h-[300px] relative">
-            <AnimatePresence mode="wait">
-              <motion.img
-                key={page}
-                variants={fadeVariants}
-                initial="initial"
-                animate="animate"
-                exit="exit"
-                src={data[page]?.image}
-                alt={data[page]?.alt}
-                className="w-full h-full object-contain absolute inset-0"
-              />
-            </AnimatePresence>
-          </div>
+          <QuoteImage page={page} data={data} />
         </div>
       </div>
       <div className="ButtonContainer flex items-center justify-center py-5">

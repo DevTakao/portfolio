@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Loader from "./Loader";
 
 const PageLoader = () => {
   useEffect(() => {
@@ -11,7 +12,10 @@ const PageLoader = () => {
 
   return (
     <div className="w-full h-screen flex items-center justify-center text-center bg-light">
-      <h1 className="animate-pulse text-3xl font-medium text-dark">Loading...</h1>
+      <div className="inline-flex flex-col items-center">
+        <Loader />
+        <p className="py-2 px-4">Loading...</p>
+      </div>
     </div>
   );
 };
