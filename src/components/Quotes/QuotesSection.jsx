@@ -87,7 +87,7 @@ const QuotesSection = () => {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className="h-[180px] sm:h-auto font-serif text-xl md:text-2xl lg:text-3xl text-center"
+                className="h-[150px] sm:h-auto font-serif text-xl md:text-2xl lg:text-3xl text-center"
               >
                 {data[page]?.quote}
               </motion.blockquote>
@@ -118,28 +118,35 @@ const QuotesSection = () => {
               </AnimatePresence>
             </div>
           </div>
-          <QuoteImage page={page} data={data} />
+          <div className="hidden sm:block">
+            <QuoteImage page={page} data={data} />
+          </div>
         </div>
-      </div>
-      <div className="ButtonContainer flex items-center justify-center py-5">
-        <button
-          onClick={() => changePage("prev")}
-          className="mx-5 border-2 border-dark py-2 px-4 hover:bg-blue transition-all duration-500 group/button"
-        >
-          <FaArrowLeft
-            size={25}
-            className="group-hover/button:-translate-x-1 group-active/button:text-light transition-all duration-500 group-active/button:duration-100"
-          />
-        </button>
-        <button
-          onClick={() => changePage("next")}
-          className="mx-5 border-2 border-dark py-2 px-4 hover:bg-blue transition-all duration-500 group/button"
-        >
-          <FaArrowRight
-            size={25}
-            className="group-hover/button:translate-x-1 group-active/button:text-light transition-all duration-500 group-active/button:duration-100"
-          />
-        </button>
+        <div className="Mobile_QuoteControls relative">
+          <div className="block sm:hidden w-1/2 mx-auto relative z-[1] pointer-events-none">
+            <QuoteImage page={page} data={data} />
+          </div>
+          <div className="ButtonContainer bg-dark text-lightsoft sm:bg-transparent sm:text-dark absolute z-[0] top-[50%] -translate-y-[50%] sm:-translate-y-0 left-0 w-full h-fit sm:h-auto sm:static flex items-center justify-center sm:py-5">
+            <button
+              onClick={() => changePage("prev")}
+              className="w-1/2 sm:w-auto sm:mr-7 border-0 sm:border border-dark py-6 sm:py-4 px-10 sm:hover:bg-blue transition-all duration-500 group/button flex items-center justify-start"
+            >
+              <FaArrowLeft
+                size={25}
+                className="group-active/button:-translate-x-2 group-active/button:scale-125 sm:group-active/button:text-light transition-all duration-500 group-active/button:duration-100"
+              />
+            </button>
+            <button
+              onClick={() => changePage("next")}
+              className="w-1/2 sm:w-auto sm:ml-7 border-0 sm:border border-dark py-6 sm:py-4 px-10 sm:hover:bg-blue transition-all duration-500 group/button flex items-center justify-end sm:justify-start"
+            >
+              <FaArrowRight
+                size={25}
+                className="group-active/button:translate-x-2 group-active/button:scale-125 sm:group-active/button:text-light transition-all duration-500 group-active/button:duration-100"
+              />
+            </button>
+          </div>
+        </div>
       </div>
     </section>
   );
