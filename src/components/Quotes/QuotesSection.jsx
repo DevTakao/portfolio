@@ -118,7 +118,7 @@ const QuotesSection = () => {
               </AnimatePresence>
             </div>
           </div>
-          {/* <QuoteImage page={page} data={data} /> */}
+          <QuoteImage page={page} data={data} />
         </div>
       </div>
       <div className="ButtonContainer flex items-center justify-center py-5">

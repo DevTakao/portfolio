@@ -33,10 +33,7 @@ const QuoteImage = ({ page, data }) => {
 
   return (
     <div className="ImageWrapper w-full h-[200px] sm:h-full sm:min-h-[300px] relative">
-      <div
-        style={{ display: loaded ? "none" : "block" }}
-        className="w-full h-full px-[50%] mx-auto flex items-center justify-center animate-pulse"
-      >
+      <div style={{ display: loaded ? "none" : "block" }} className="w-full h-full flex items-center justify-center">
         <Loader />
       </div>
       <AnimatePresence mode="wait">
