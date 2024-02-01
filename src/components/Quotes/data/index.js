@@ -1,9 +1,9 @@
-import Iroh from "@assets/images/iroh.png";
-import KarmaAkabane from "@assets/images/karma.png";
-import Sora from "@assets/images/sora.png";
-import Koro from "@assets/images/koro.png";
-import Socrates from "@assets/images/socrates.png";
-import Epictetus from "@assets/images/epictetus.png";
+import Iroh from "@assets/images/iroh-min.png";
+import KarmaAkabane from "@assets/images/karma-min.png";
+import Sora from "@assets/images/sora-min.png";
+import Koro from "@assets/images/koro-min.png";
+import Socrates from "@assets/images/socrates-min.png";
+import Epictetus from "@assets/images/epictetus-min.png";
 
 export const data = [
   {
