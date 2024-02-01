@@ -38,10 +38,15 @@ const Footer = () => {
       <br />
       <span className="text-[0.75rem]">
         &copy; Music:{" "}
-        <a href="https://www.youtube.com/watch?v=_Ci0Kgdpgsw" target="_blank" rel="noreferrer" className="underline">
-          On The Run
-        </a>
-        , by Timecop1983 (Fair-use)
+        <a
+          href="https://tobyfox.bandcamp.com/track/a-cybers-world"
+          target="_blank"
+          rel="noreferrer"
+          className="underline"
+        >
+          A CYBER&apos; WORLD
+        </a>{" "}
+        by Toby Fox (Fair-Use)
       </span>
     </motion.div>
   );

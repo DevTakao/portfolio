@@ -2,7 +2,7 @@ import { FaVolumeUp, FaVolumeMute } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { useAppStore } from "@store/appStore";
 import ReactAudioPlayer from "react-audio-player";
-import Music from "@assets/sounds/Timecop1983_On_the_Run.mp3";
+import Music from "@assets/sounds/music.mp3";
 
 const AudioToggle = () => {
   const { isAudioOn, setAudio } = useAppStore();
