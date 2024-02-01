@@ -37,7 +37,7 @@ const QuoteImage = ({ page, data }) => {
         style={{ display: loaded ? "none" : "block" }}
         className="w-full h-full px-[50%] mx-auto flex items-center justify-center animate-pulse"
       >
-        loading
+        <Loader />
       </div>
       <AnimatePresence mode="wait">
         <motion.img
