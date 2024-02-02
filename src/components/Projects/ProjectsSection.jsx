@@ -6,6 +6,7 @@ import Supermarket from "@assets/images/projects/supermarket.svg";
 import ProjectCard from "./ProjectCard"; // Import the new component
 import SectionHeader from "@common/SectionHeader";
 import ConstellationsSVG from "@assets/images/endless-constellation.svg";
+import useNarrator from "@/hooks/useNarrator";
 
 const ProjectsSection = () => {
   const projectsData = [
@@ -41,8 +42,10 @@ const ProjectsSection = () => {
     },
   ];
 
+  const narrateRef = useNarrator("I'm proud of every project I did");
+
   return (
-    <section className="Projects_Section section-container relative">
+    <section ref={narrateRef} className="Projects_Section section-container relative">
       <div
         style={{ backgroundImage: `url(${ConstellationsSVG})` }}
         className="absolute z-[0] top-0 left-0 w-full h-full opacity-30 bg-fixed bg-repeat"

@@ -9,12 +9,14 @@ import { fadeInAnim } from "@animations";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import useNarrator from "@/hooks/useNarrator";
 
 const SkillsSection = () => {
+  const narrateRef = useNarrator("I'm more or less a JavaScript practitioner");
   const [activeId, setActiveId] = useState(0);
 
   return (
-    <section className="Skills_Section section-container px-1 relative overflow-hidden">
+    <section ref={narrateRef} className="Skills_Section section-container px-1 relative overflow-hidden">
       <div className="Background absolute z-[0] w-full h-full top-0 left-0 blur-md flex items-center justify-center">
         <AnimatePresence mode="popLayout">
           <motion.img

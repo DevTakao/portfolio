@@ -7,6 +7,7 @@ const defaultState = {
   currentMain: "profile",
   currentDisplay: "basicInfo",
   isHomePageLoading: true,
+  narration: "",
 };
 
 const appStore = (set) => ({
@@ -32,6 +33,7 @@ const appStore = (set) => ({
       currentDisplay: contentName,
     });
   },
+  updateNarration: (str) => set({ narration: str }),
 });
 
 export const useAppStore = create(appStore);

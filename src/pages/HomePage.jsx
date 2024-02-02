@@ -4,6 +4,7 @@ import { useAppStore } from "../store/appStore";
 import Footer from "@common/Footer";
 import AudioToggle from "@common/AudioToggle";
 import PageLoader from "@common/PageLoader";
+const Narrator = lazy(() => import("@common/Narrator"));
 const ProjectsSection = lazy(() => import("@components/Projects/ProjectsSection"));
 const HeroSection = lazy(() => import("@components/Hero/HeroSection"));
 const SkillsSection = lazy(() => import("@components/Skills/SkillsSection"));
@@ -24,6 +25,7 @@ const HomePage = () => {
     <Suspense fallback={<PageLoader />}>
       {loading && <PageLoader />}
       <div className="w-full overflow-hidden">
+        <Narrator />
         <HeroSection />
         <SkillsSection />
         <ProjectsSection />

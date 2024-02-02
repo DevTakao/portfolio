@@ -5,6 +5,7 @@ import { useState } from "react";
 import QuoteIcon from "@assets/images/quote-icon.svg";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import QuoteImage from "./QuoteImage";
+import useNarrator from "@/hooks/useNarrator";
 
 const fadeVariants = {
   initial: {
@@ -61,6 +62,9 @@ const quoteNameOverlayVariants = {
 };
 
 const QuotesSection = () => {
+  const narrateRef = useNarrator(
+    "I know, most of them are fictional. That just shows how disappointed I am in real people."
+  );
   const [page, setPage] = useState(0);
 
   const changePage = (dir = "next") => {
@@ -72,7 +76,7 @@ const QuotesSection = () => {
   };
 
   return (
-    <section className="section-container bg-lightsoft">
+    <section ref={narrateRef} className="section-container bg-lightsoft">
       <SectionHeader>Favorite Quotes</SectionHeader>
       <div className="QuoteArea">
         <div className="w-full h-full grid sm:grid-cols-2">

@@ -4,8 +4,10 @@ import { motion } from "framer-motion";
 import { useAppStore } from "@store/appStore";
 import ScrollGuide from "./ScrollGuide";
 import CatSvg from "@common/CatSvg";
+import useNarrator from "@/hooks/useNarrator";
 
 const HeroSection = () => {
+  const narrateRef = useNarrator("Hello. I will be your tour guide for this visit.");
   const { isHomePageLoading: loading, setHomePageLoading: setLoading } = useAppStore();
 
   const [secretClickCounter, setSecretClickCounter] = useState(0);
@@ -22,7 +24,7 @@ const HeroSection = () => {
   }, [secretClickCounter]);
 
   return (
-    <div>
+    <div ref={narrateRef}>
       <div className="h-screen bg-light relative">
         <div
           data-loading={loading}

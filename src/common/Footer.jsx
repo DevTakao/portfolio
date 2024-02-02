@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <motion.div
       {...fadeInAnim}
-      className="relative z-10 my-10 py-5 px-6 text-base font-serif bg-light text-left sm:text-center"
+      className="Footer my-10 py-5 px-6 text-base font-serif bg-light text-left sm:text-center"
     >
       <div className="Socials max-w-md mx-auto flex items-center justify-start sm:justify-center mb-4 [&>a]:mr-2 [&>a:last]:mr-0">
         <a
