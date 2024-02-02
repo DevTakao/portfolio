@@ -39,14 +39,14 @@ const Footer = () => {
       <span className="text-[0.75rem]">
         &copy; Music:{" "}
         <a
-          href="https://tobyfox.bandcamp.com/track/a-cybers-world"
+          href="https://music.apple.com/jp/album/a-cup-of-coffee/392228011?i=392228030"
           target="_blank"
           rel="noreferrer"
           className="underline"
         >
-          A CYBER&apos; WORLD
+          Flower Dance
         </a>{" "}
-        by Toby Fox (Fair-Use)
+        by DJ Okawari (Fair-Use)
       </span>
     </motion.div>
   );
