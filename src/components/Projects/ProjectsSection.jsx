@@ -42,7 +42,9 @@ const ProjectsSection = () => {
     },
   ];
 
-  const narrateRef = useNarrator("I'm proud of every project I did");
+  const narrateRef = useNarrator(
+    "I'm proud of every project I did. Ya' see those cyber-ish animations? I'm proud of them too."
+  );
 
   return (
     <section ref={narrateRef} className="Projects_Section section-container relative">

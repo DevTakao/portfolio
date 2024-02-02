@@ -21,7 +21,7 @@ const Narrator = () => {
         <img
           src={NarratorImage}
           alt="narrator"
-          className="w-full h-full object-contain -scale-x-100"
+          className="w-full h-full object-contain -scale-x-100 -ml-[1px] -mb-[1px]"
           data-tooltip-id="narrator-speech"
         />
       </div>

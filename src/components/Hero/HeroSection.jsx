@@ -7,7 +7,7 @@ import CatSvg from "@common/CatSvg";
 import useNarrator from "@/hooks/useNarrator";
 
 const HeroSection = () => {
-  const narrateRef = useNarrator("Hello. I will be your tour guide for this visit.");
+  const narrateRef = useNarrator("Hello. Thank you for this visit. *smiles politely*");
   const { isHomePageLoading: loading, setHomePageLoading: setLoading } = useAppStore();
 
   const [secretClickCounter, setSecretClickCounter] = useState(0);

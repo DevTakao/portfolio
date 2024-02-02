@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 import useNarrator from "@/hooks/useNarrator";
 
 const SkillsSection = () => {
-  const narrateRef = useNarrator("I'm more or less a JavaScript practitioner");
+  const narrateRef = useNarrator("Eat, Sleep, JavaScript.");
   const [activeId, setActiveId] = useState(0);
 
   return (
