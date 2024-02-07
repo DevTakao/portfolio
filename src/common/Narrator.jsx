@@ -8,8 +8,8 @@ const Narrator = () => {
   }));
 
   return (
-    <div className="Narrator fixed z-[11] w-full bottom-[-17px] left-0 flex items-bottom justify-start">
-      <div className="ImageWrapper w-[75px] h-auto hover:opacity-0 transition-opacity duration-300">
+    <div className="Narrator pointer-events-none fixed z-[11] w-full bottom-[-17px] left-0 flex items-bottom justify-start">
+      <div className="ImageWrapper pointer-events-auto w-[75px] h-auto hover:opacity-0 transition-opacity duration-300">
         <Tooltip
           variant="light"
           id="narrator-speech"
