@@ -4,8 +4,16 @@ import Sora from "@assets/images/sora-min.png";
 import Koro from "@assets/images/koro-min.png";
 import Socrates from "@assets/images/socrates-min.png";
 import Epictetus from "@assets/images/epictetus-min.png";
+import Thorfinn from "@assets/images/thorfinn-min.png";
 
 export const data = [
+  {
+    quote:
+      "If the leaders have issues, they should settle them over a game of Chess. There is absolutely no reason for all the people to gather and cause bloodshed. You guys and I just met today. We don't know each other enough to hold grudges. Why must we fight? You all are not my enemies. I have no enemy.",
+    name: "Thorfinn",
+    image: Thorfinn,
+    alt: "Thorfinn",
+  },
   {
     quote: "Suffering comes from trying to control what is uncontrollable.",
     name: "Epictetus",

@@ -63,7 +63,7 @@ const quoteNameOverlayVariants = {
 
 const QuotesSection = () => {
   const narrateRef = useNarrator(
-    "I know, most of them are fictional. That just shows how disappointed I am in real people."
+    "These quotes played a big role in guiding me towards inner peace and being a better human in general."
   );
   const [page, setPage] = useState(0);
 
@@ -91,7 +91,7 @@ const QuotesSection = () => {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className="h-[150px] sm:h-auto font-serif text-xl md:text-2xl lg:text-3xl text-center"
+                className="min-h-[150px] sm:h-auto font-serif text-base md:text-xl lg:text-2xl text-center"
               >
                 {data[page]?.quote}
               </motion.blockquote>
