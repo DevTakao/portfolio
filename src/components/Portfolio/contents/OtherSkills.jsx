@@ -1,12 +1,13 @@
 const OtherSkills = () => {
   const skills = [
-    "C#",
+    "Agile Methodologies",
+    "Documentation",
     "Unity Game Development",
+    "C#",
     "Inkscape",
     "Critical Thinking",
     "Problem Solving",
     "Philosophy",
-    "Color Psychology",
     "Teaching / Tutoring",
   ];
 

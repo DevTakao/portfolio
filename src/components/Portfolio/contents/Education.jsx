@@ -15,8 +15,8 @@ const Education = () => {
         and got accepted.
       </p>
       <p className="pb-6">
-        However, after a few months, I felt that the syllabus for my Major was not enough for me to spend 6 years on. So
-        I dropped out at <span className="font-medium text-lg">[Year 2]</span> to pursue my career and passion for
+        However, after a few months, I felt that the syllabus for my major was not worth to spend 6 years on. So I
+        dropped out at <span className="font-medium text-lg">[Year 2]</span> to pursue my career and passion for
         softwares and games. I started studying Web Development myself for around 2 years and received some certificates
         in the following courses at FreeCodeCamp.
       </p>
@@ -29,10 +29,10 @@ const Education = () => {
         software engineer in our programming field. I learnt how to be a great thinker and programmer from his lectures.
       </p>
       <p>
-        Since I landed my first job as a developer in 2022, I have been self-studying supportive academic skills for
-        software engineering such as <b className="font-semibold">Discrete Mathematics</b>,{" "}
-        <b className="font-semibold">Linear Algebra</b>, and <b className="font-semibold">Computer Science</b>, using
-        online resources.
+        Since I landed my first job as a developer in 2022, I have been extending my abilites by learning new skills
+        such as Cloud Solutions and Mobile App Development, and complementary academics such as{" "}
+        <b className="font-semibold">Design Patterns</b>, <b className="font-semibold">Linear Algebra</b>, and{" "}
+        <b className="font-semibold">Computer Science</b>, using online resources.
       </p>
     </div>
   );

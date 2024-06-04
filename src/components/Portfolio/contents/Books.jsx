@@ -34,8 +34,16 @@ const Books = () => {
       author: "Dan Vanderkam",
     },
     {
+      title: "Total Typescript",
+      author: "Matt Pocock",
+    },
+    {
       title: "Discover Three.js",
       author: "Lewy Blue",
+    },
+    {
+      title: "Refactoring: Improving The Design Of Existing Software",
+      author: "Martin Fowler ft. Kent Beck",
     },
   ];
 

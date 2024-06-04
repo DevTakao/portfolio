@@ -3,7 +3,19 @@ import { FaAngleDoubleRight } from "react-icons/fa";
 const Projects = () => {
   const data = [
     {
-      name: "CMS Dashboard & QR Code Generator",
+      name: "Chrome Extension",
+      industry: "Software",
+      client: "",
+      stack: ["TypeScript", "CRXJS", "React", "Manifest V3"],
+    },
+    {
+      name: "CMS Dashboard",
+      industry: "Engineering/Science",
+      client: "",
+      stack: ["HTML", "CSS", "React", "TypeScript", "Tailwind"],
+    },
+    {
+      name: "PDF & QR Code Generator",
       industry: "Advertisement",
       client: "",
       stack: ["Pixi.js", "EJS", "HTML", "CSS", "React"],
@@ -15,15 +27,15 @@ const Projects = () => {
       stack: ["Microsoft Dynamics CRM", "MariaDB", "MongoDB", "AWS Lambda", "Node.js", "Vue.js", "Nuxt.js", "Pug"],
     },
     {
-      name: "SVG Animations",
-      industry: "Public Services",
+      name: "SVG & CSS/JS Animations",
+      industry: "Reusable UI Library Project",
       client: "",
-      stack: ["HTML", "SCSS", "JavaScript", "Gulp.js"],
+      stack: ["HTML", "CSS", "Tailwind", "TypeScript", "Framer Motion", "Storybook"],
     },
     {
       name: "Video Monitoring & Location Dashboard",
       industry: "Administrative",
-      client: "",
+      client: "(A Singapore Government Agency)",
       stack: ["Next.js", "Zustand", "Leaflet.js", "Strapi"],
     },
     {

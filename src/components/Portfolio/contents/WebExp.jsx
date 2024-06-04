@@ -20,7 +20,7 @@ const WebExp = () => {
     <div className="text-left divide-y-2 divide-lightsoft p-8">
       <WebExpItem
         {...{
-          role: "Web Developer & Technical Research Analyst",
+          role: "Senior Web Developer & Technical Researcher",
           company: "Visible One, Singapore",
           url: "https://visibleone.com/",
           years: "Jun 2023 - Present",
@@ -28,7 +28,7 @@ const WebExp = () => {
       />
       <WebExpItem
         {...{
-          role: "Front-end Development Team Leader",
+          role: "Front-end Lead",
           company: "Nexstack, Singapore",
           url: "https://nexstack.sg/",
           years: "Aug 2022 - Jun 2023",
