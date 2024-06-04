@@ -79,7 +79,7 @@ const HeroSection = () => {
             }}
             viewport={{ once: true }}
           >
-            I&apos;m a daydreaming Technical Research Analyst & Web Developer. I love cats{" "}
+            I&apos;m a Senior Web Developer with 5+ years of overall experience in the tech industry. I love cats{" "}
             <span className="select-none" onClick={() => setSecretClickCounter((prev) => prev + 1)}>
               🐱
             </span>{" "}

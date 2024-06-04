@@ -42,6 +42,22 @@ const WebExp = () => {
           years: "Mar 2022 - Aug 2022",
         }}
       />
+      <WebExpItem
+        {...{
+          role: "Founder",
+          company: "Myan Digital",
+          url: "https://fb.com/myandigital.mm",
+          years: "Aug 2020 - Feb 2021",
+        }}
+      />
+      <WebExpItem
+        {...{
+          role: "Freelance Developer",
+          company: "Self-employed",
+          url: "",
+          years: "Sep 2018 - Jun 2020",
+        }}
+      />
     </div>
   );
 };

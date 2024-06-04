@@ -3,8 +3,9 @@ import NextLogo from "@assets/images/skills/next-min.png";
 import HTMLLogo from "@assets/images/skills/html-min.png";
 import CSSLogo from "@assets/images/skills/css-min.png";
 import JSLogo from "@assets/images/skills/javascript-min.png";
+import TSLogo from "@assets/images/skills/typescript-min.png";
 import TailwindLogo from "@assets/images/skills/tailwind-min.png";
-import ThreeLogo from "@assets/images/skills/three-min.png";
+// import ThreeLogo from "@assets/images/skills/three-min.png";
 
 export const skills = [
   {
@@ -43,17 +44,17 @@ export const skills = [
       "JavaScript, often abbreviated as JS, is a programming language and core technology of the World Wide Web, alongside HTML and CSS. As of 2023, 98.7% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.",
   },
   {
+    name: "TypeScript",
+    logo: TSLogo,
+    hex: "#007ACC",
+    description:
+      "TypeScript is a free and open-source high-level programming language developed by Microsoft that adds static typing with optional type annotations to JavaScript. It is designed for the development of large applications and transpiles to JavaScript.",
+  },
+  {
     name: "TailwindCSS",
     logo: TailwindLogo,
     hex: "#06b6d4",
     description:
       "Tailwind CSS is an open source CSS framework. The main feature of this library is that, unlike other CSS frameworks like Bootstrap, it does not provide a series of predefined classes for elements such as buttons or tables.",
-  },
-  {
-    name: "Three.js",
-    logo: ThreeLogo,
-    hex: "#000000",
-    description:
-      "Three.js is a cross-browser JavaScript library and application programming interface used to create and display animated 3D computer graphics in a web browser using WebGL.",
   },
 ];
